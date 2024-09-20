@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Certificado="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" CondicionesDePago="0 DIAS" Exportacion="02" Fecha="2023-10-14T14:57:01" Folio="204233" FormaPago="99" LugarExpedicion="45221" MetodoPago="PPD" Moneda="USD" NoCertificado="00001000000505071498" Sello="LnxWMgnnkL6H5mUiyfemWkBRoK7Gd4QnXB7OAPIuttXdrRUdkQFs5Jp84tjPP7R8ydNG4xz/qxrlhCIb0e31FCVJEQwwDcAEnFfKSzQXLtn3Eh4K/W1kdMVWlytzU3tLygLT3L37T0A4vIuFdC3VnJv8jfpaRVyD+y84Kq1qiUXUEbLYJQ5EyUt728uds5OQFEjv1NxB8S1Hl+tQSXlzcyrvlTjBj6CwJKUnX35a5vGv15QoBW8/QgRKgaMNWg2NggBXvuodBFMpLts7pKHXPuXCA0IjNVzRiGH3w0tmZdmFeGTtJ8vXhq9/Opatwre1aGggVCGFzZkFuQdyoVFZ4Q==" Serie="FP" SubTotal="36364.20" TipoCambio="18.0362" TipoDeComprobante="I" Total="36364.20" Version="4.0" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd"><cfdi:Emisor Nombre="PABLO IGNACIO MICHEL ONTIVEROS" RegimenFiscal="612" Rfc="MIOP6904169V2"></cfdi:Emisor><cfdi:Receptor DomicilioFiscalReceptor="45221" Nombre="CEVALLOS ANDRADE CARLOS PATRICIO" NumRegIdTrib="1707511356001" RegimenFiscalReceptor="616" ResidenciaFiscal="ECU" Rfc="XEXX010101000" UsoCFDI="S01"></cfdi:Receptor><cfdi:Conceptos>
+	<cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+
+
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  <cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01140" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+
+
+<cfdi:Concepto Cantidad="810" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS MINICUADRO 2X3 HARINA DE MAIZ SC 15 KG" Importe="16904.70" NoIdentificacion="T01306" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="16904.70" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="16904.70" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="40" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS CUADRO XPANDER HARINA DE TRIGO  SC 15 KG" Importe="834.80" NoIdentificacion="T01320" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="834.80" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="25" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS ESTRELLA HARINA DE TRIGO SC 15 KG" Importe="521.75" NoIdentificacion="T01414" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="521.75" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="521.75" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="60" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS REJA HARINA DE TRIGO SC 15 KG" Importe="1252.20" NoIdentificacion="T01436" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1252.20" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="1252.20" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="100" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS RUEDA HARINA DE TRIGO SC 15 KG" Importe="2087.00" NoIdentificacion="T01442" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2087.00" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="2087.00" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="50" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS TORNILLO HARINA DE TRIGO SC 15 KG" Importe="1043.50" NoIdentificacion="T01446" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1043.50" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="1043.50" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="50" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS REJA PAPA HARINA DE PAPA SC 15 KG" Importe="1672.50" NoIdentificacion="T01509" ObjetoImp="02" ValorUnitario="33.4500">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1672.50" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="1672.50" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="15" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS PALITO DE PAPA 15 KG." Importe="501.75" NoIdentificacion="T01518" ObjetoImp="02" ValorUnitario="33.4500">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="501.75" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="501.75" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="25" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS ANILLO HARINA DE TRIGO SACO 15 KG EXP ECD" Importe="521.75" NoIdentificacion="T01534" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="521.75" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="521.75" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="30" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS ARO CEBOLLA HARINA DE TRIGO SC 15 KG" Importe="626.10" NoIdentificacion="T01627" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="626.10" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="626.10" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="20" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="ANILLO CHOCOLATE SACO 15 KG" Importe="417.40" NoIdentificacion="T01706" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="417.40" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="417.40" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="210" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS TOCINETA 3X3 HARINA DE TRIGO  SC 20 KG" Importe="5842.20" NoIdentificacion="T03118" ObjetoImp="02" ValorUnitario="27.8200">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="5842.20" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="5842.20" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="100" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS TOCINETA 2X2 HARINA DE TRIGO SC 20 KG" Importe="2782.00" NoIdentificacion="T03147" ObjetoImp="02" ValorUnitario="27.8200">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2782.00" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="2782.00" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="25" ClaveProdServ="50192100" ClaveUnidad="XSA" Descripcion="PELLETS FIGURAS VARIAS HARINA DE TRIGO SC 15 KG" Importe="521.75" NoIdentificacion="T03307" ObjetoImp="02" ValorUnitario="20.8700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="521.75" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+          <cfdi:Traslado Base="521.75" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+</cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+    <cfdi:Traslados>
+		<cfdi:Traslado Base="36364.20" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+<cfdi:Traslado Base="36364.20" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"></cfdi:Traslado>
+</cfdi:Traslados>
+  </cfdi:Impuestos><cfdi:Complemento>
+		<cce11:ComercioExterior CertificadoOrigen="1" ClaveDePedimento="A1" Incoterm="FOB" Subdivision="0" TipoCambioUSD="18.0362" TipoOperacion="2" TotalUSD="36364.20" Version="1.1">
+	<cce11:Emisor Curp="MIOP690416HJCCNB03">
+	<cce11:Domicilio Calle="ANDRÉS QUINTANA ROO" CodigoPostal="44220" Colonia="0034" Estado="JAL" Localidad="03" Municipio="039" NumeroExterior="1501" Pais="MEX"></cce11:Domicilio>
+	</cce11:Emisor>
+      <cce11:Receptor>
+		<cce11:Domicilio Calle="SIERRA MORENA NO. LOTE 408" CodigoPostal="NA" Estado="ECUADOR" Localidad="PICHINCHA,QUITO" Pais="ECU"></cce11:Domicilio> 		
+	</cce11:Receptor>
+	
+	<cce11:Mercancias>
+	<cce11:Mercancia CantidadAduana="600.000" FraccionArancelaria="1103200201" NoIdentificacion="T01140" UnidadAduana="01" ValorDolares="834.80" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="12150.000" FraccionArancelaria="1103130100" NoIdentificacion="T01306" UnidadAduana="01" ValorDolares="16904.70" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="600.000" FraccionArancelaria="1103200201" NoIdentificacion="T01320" UnidadAduana="01" ValorDolares="834.80" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="375.000" FraccionArancelaria="1103200201" NoIdentificacion="T01414" UnidadAduana="01" ValorDolares="521.75" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="900.000" FraccionArancelaria="1103200201" NoIdentificacion="T01436" UnidadAduana="01" ValorDolares="1252.20" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="1500.000" FraccionArancelaria="1103200201" NoIdentificacion="T01442" UnidadAduana="01" ValorDolares="2087.00" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="750.000" FraccionArancelaria="1103200201" NoIdentificacion="T01446" UnidadAduana="01" ValorDolares="1043.50" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="750.000" FraccionArancelaria="1105200100" NoIdentificacion="T01509" UnidadAduana="01" ValorDolares="1672.50" ValorUnitarioAduana="2.23">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="225.000" FraccionArancelaria="1105200100" NoIdentificacion="T01518" UnidadAduana="01" ValorDolares="501.75" ValorUnitarioAduana="2.23">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="375.000" FraccionArancelaria="1103200201" NoIdentificacion="T01534" UnidadAduana="01" ValorDolares="521.75" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="450.000" FraccionArancelaria="1103200201" NoIdentificacion="T01627" UnidadAduana="01" ValorDolares="626.10" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="300.000" FraccionArancelaria="1103200201" NoIdentificacion="T01706" UnidadAduana="01" ValorDolares="417.40" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="4200.000" FraccionArancelaria="1103200201" NoIdentificacion="T03118" UnidadAduana="01" ValorDolares="5842.20" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="2000.000" FraccionArancelaria="1103200201" NoIdentificacion="T03147" UnidadAduana="01" ValorDolares="2782.00" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="375.000" FraccionArancelaria="1103200201" NoIdentificacion="T03307" UnidadAduana="01" ValorDolares="521.75" ValorUnitarioAduana="1.39">
+</cce11:Mercancia>
+</cce11:Mercancias>
+</cce11:ComercioExterior>
+	<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" FechaTimbrado="2023-10-14T15:18:57" NoCertificadoSAT="00001000000700926429" RfcProvCertif="FAC100625MC0" SelloCFD="LnxWMgnnkL6H5mUiyfemWkBRoK7Gd4QnXB7OAPIuttXdrRUdkQFs5Jp84tjPP7R8ydNG4xz/qxrlhCIb0e31FCVJEQwwDcAEnFfKSzQXLtn3Eh4K/W1kdMVWlytzU3tLygLT3L37T0A4vIuFdC3VnJv8jfpaRVyD+y84Kq1qiUXUEbLYJQ5EyUt728uds5OQFEjv1NxB8S1Hl+tQSXlzcyrvlTjBj6CwJKUnX35a5vGv15QoBW8/QgRKgaMNWg2NggBXvuodBFMpLts7pKHXPuXCA0IjNVzRiGH3w0tmZdmFeGTtJ8vXhq9/Opatwre1aGggVCGFzZkFuQdyoVFZ4Q==" SelloSAT="FAAziBZRcMABSZ7Rpl7MS+3z1L0k1LMErV20kopo6RvjbQfO3dtr78L36f6HP572Fyaww5LWz9gS33r0xKDy4ztp3fGFFaZ/XO+t5drYDiGfEf/vo9Rj+T8YKIF6FsHg6ZwBxYcMtw0Hq3G+nvkFYjqbY0ghdhJH7sKxGy8YGmnTEFCmRKdwTEvoh4KTT/brVA3JDtZVywadXa9PbRd0LFtzJPp398KoqsUK5+LbcMkUBr0wD3dH93Q+N1SSzZGHXPRNUo3rSDnj5CZIiAYPv3m2XSgHM7vEc6p8LUATlc8bcWKpZzG5P+2T8zMpLSNPlWMZbwmIoeaQ8OLGHiRm4w==" UUID="43FE816C-E834-4E3A-A8EF-EB299949962F" Version="1.1" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"></tfd:TimbreFiscalDigital>
+  </cfdi:Complemento></cfdi:Comprobante>

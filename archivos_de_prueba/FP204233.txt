@@ -1,0 +1,371 @@
+#InicioComprobante
+tipoDocumento=FACTURA
+com:serie=FP
+com:folio=204233
+com:fecha=2023-10-14T14:57:01
+com:formaPago=99
+com:noCertificado=00001000000505071498
+com:condicionesDePago=0 DIAS
+com:subTotal=36364.20
+com:descuento=
+com:motivoDescuento=
+com:total=36364.20
+com:metodoPago=PPD
+com:tipoDeComprobante=I
+com:Exportacion=02
+com:tipoCambio=18.0362
+com:moneda=USD
+com:ctaPago=No identificado
+com:frmPago=99
+com:lugarExpedicion=45221
+com:etiqCambio=Tipo de cambio aplicado:
+com:auxCambio=  18.0362
+
+#InfoGlobal
+infoG:Periodicidad=
+infoG:Meses=
+infoG:Anio=
+
+#Emisor
+em:rfc=MIOP6904169V2
+em:regimenFiscal=612
+em:regimenFiscalPDF=Personas Físicas con Actividades Empresariales y Profesionales
+em:FactAtrAdquiriente=
+em:curp=MIOP690416HJCCNB03
+em:nombre=PABLO IGNACIO MICHEL ONTIVEROS
+em:calle=ANDRÉS QUINTANA ROO
+em:noExterior=1501
+em:noInterior=
+em:colonia=0034
+em:PDFcolonia=GUADALUPANA SUR
+em:telefono=(01) 33 3585-55-50, 3823-71-20 FAX (01) 33 35 85-55-79
+em:localidad=03
+em:PDFlocalidad=
+em:municipio=039
+em:PDFmunicipio=GUADALAJARA
+em:estado=JAL
+em:PDFestado=JALISCO
+em:pais=MEX
+em:PDFpais=MÉXICO
+em:codigoPostal=44220
+
+#ExpedidoEn
+ex:nombre=PABLO IGNACIO MICHEL ONTIVEROS
+ex:calle=
+ex:noExterior=
+ex:noInterior=
+ex:colonia=
+ex:localidad=
+ex:municipio=
+ex:estado=
+ex:pais=
+ex:codigoPostal=
+
+#Receptor
+re:rfc=XEXX010101000
+re:idFiscal=1707511356001
+re:nombre=CEVALLOS ANDRADE CARLOS PATRICIO
+re:DomicilioFiscalReceptor=45221
+re:ResidenciaFiscal=ECU
+re:NumRegIDTrib=1707511356001
+re:RegimenFiscalReceptor=616
+re:UsoCFDI=S01
+re:calle=SIERRA MORENA NO. LOTE 408
+re:noExterior=
+re:noInterior=
+re:colonia=
+re:localidad=PICHINCHA,QUITO
+re:referencia=
+re:municipio=
+re:estado=ECUADOR
+re:pais=ECU
+re:estadoPDF=
+re:paisPDF=ECU
+re:CPPDF=
+re:CPLabel=
+re:codigoPostal=NA
+re:telefono=(593)0228.25734
+
+#EntregadoEn
+ent:nombre=
+ent:calle=
+ent:noExterior=
+ent:noInterior=
+ent:colonia=
+ent:localidad=
+ent:referencia=
+ent:municipio=
+ent:estado=
+ent:pais=
+ent:codigoPostal=
+
+#ImpuestosTrasladados
+TipoFactor|TasaOCuota|Impuesto|Importe|Base
+Tasa|0.000000|002|0.00|36364.20
+Tasa|0.000000|003|0.00|36364.20
+#FinImpuestosTraslados
+
+#TotalImpuestos
+imp:totaldeimpuestosTrasladados=0.00
+
+#Descuentos
+des:porcentajeDeDescuentoFinanciero=
+des:porcentajeDeDescuentoTotal=
+des:descuentoFinanciero=
+des:importeDescuentoTotal=
+
+#Totales
+tot:subtotalSinDescuentosSinIva=36364.20
+tot:subTotal=36364.20
+tot:IVA=0.00
+tot:total=36364.20
+tot:IEPS=0.00
+tot:cantidadConLetra=TREINTA Y SEIS MIL TRESCIENTOS SESENTA Y CUATRO  DOLARES 20/100 U.S.
+tot:subTotalMx=0.00
+tot:ivaMx=0.00
+tot:IEPSMx=0.00
+tot:totalMx=655871.98
+
+
+#Datos de la empresa
+emp:ship01=
+emp:ship02=
+emp:ship03=
+emp:ship04=
+emp:ship05=
+emp:ship06=
+emp:ship07=
+emp:trans1=MILLHOUSE MEXICO
+emp:trans2=
+emp:ordEnt=348974H
+emp:numGuia=2407
+emp:numped=302645
+emp:ordSal=0454592
+emp:lisPrec=LE310772
+emp:nomAge1=ABRAHAM JAFET VEGA
+emp:ordComp=(P.O.)FP-0423
+emp:obs01=T.Operac:2  Cve:A1  Cert de Orig:1  Num.Cert.Orig:  Incoterm:FOB  TC:  18.0362  TotUSD:36364.20  Edo:ECUADOR  País:ECU          OBSERVACIONES: FOB, MANZANILLO, MÉXICO
+emp:obs02=FOB MANZANILLO MEXICO 
+emp:extra03Banco=INTERNATIONAL BANK
+emp:extra03Clabe=
+emp:extra03Cuenta=0755176
+emp:extra03Ref=
+emp:extra04Banco=
+emp:extra04Clabe=
+emp:extra04Cuenta=
+emp:extra04Ref=
+emp:extra05Banco=
+emp:extra05Clabe=
+emp:extra05Cuenta=
+emp:extra05Ref=
+emp:extra06Banco=
+emp:extra06Clabe=
+emp:extra06Cuenta=
+emp:extra06Ref=
+emp:extra07Banco=
+emp:extra07Clabe=
+emp:extra07Cuenta=
+emp:extra07Ref=
+emp:extra08=
+emp:sumaBultos=1600.00
+emp:sumaKilos=25550.00
+emp:diaPag=14
+emp:mesPag=10
+emp:yearPag=2023
+emp:interesPag=3
+emp:diaFac=14
+emp:mesFac=10
+emp:yearFac=2023
+emp:numCliente=310772
+emp:folioFl=
+
+#DatosFA
+FA:status=1
+FA:gpoMerza=no
+FA:impresora=LVMF-FACTURACION2
+FA:numeroCopiasPorImprimir=6
+FA:email=abraham.vega@michel.com.mx,juan.garcia@michel.com.mx,jmanzo@michel.com.mx,laura.rivera@michel.com.mx,mayra.torres@michel.com.mx,paola.heredia@michel.com.mx
+FA:FormaPagoPDF=Pago en parcialidades o diferido
+FA:TipoComprobante=Ingreso
+FA:frmPago=Por definir
+FA:UsoCfdi=Sin efectos fiscales.  
+FA:ResumenTax=IMPUESTOS >> Cve:002 Factor:Tasa Tasa o Cuota:0.00 Base: $36,364.20 Impte: $0.00 >> Cve:003 Factor:Tasa Tasa o Cuota:0.00 Base: $36,364.20 Impte: $0.00
+FA:Docto=FACTURA
+FA:DescRelacionUUID=
+FA:TxtRelacion=
+FA:InfoTit=I M P O R T A N T E
+FA:InfoCta=La siguiente información bancaria es la única que nuestra empresa reconoce para acreditar pagos: *Beneficiario:PABLO IGNACIO MICHEL ONTIVEROS  *Banco:INTERNATIONAL BANK *Número de cuenta:0755176 *ID Bank / Aba :114915272  *Dirección: 1801 S. 2nd St. McAllen, Texas 78503
+
+
+#Comentarios
+#FinComentarios
+
+#InicioDetalle
+Línea|Articulo|Descripción|Bultos|UM|Kgs|Precio Bulto|Importe|Descto|CodSAT|
+1|T01140|PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG|40|XSA|600|20.8700|834.80||50192100||
+1|T01306|PELLETS MINICUADRO 2X3 HARINA DE MAIZ SC 15 KG|810|XSA|12150|20.8700|16904.70||50192100||
+1|T01320|PELLETS CUADRO XPANDER HARINA DE TRIGO  SC 15 KG|40|XSA|600|20.8700|834.80||50192100||
+1|T01414|PELLETS ESTRELLA HARINA DE TRIGO SC 15 KG|25|XSA|375|20.8700|521.75||50192100||
+1|T01436|PELLETS REJA HARINA DE TRIGO SC 15 KG|60|XSA|900|20.8700|1252.20||50192100||
+1|T01442|PELLETS RUEDA HARINA DE TRIGO SC 15 KG|100|XSA|1500|20.8700|2087.00||50192100||
+1|T01446|PELLETS TORNILLO HARINA DE TRIGO SC 15 KG|50|XSA|750|20.8700|1043.50||50192100||
+1|T01509|PELLETS REJA PAPA HARINA DE PAPA SC 15 KG|50|XSA|750|33.4500|1672.50||50192100||
+1|T01518|PELLETS PALITO DE PAPA 15 KG.|15|XSA|225|33.4500|501.75||50192100||
+1|T01534|PELLETS ANILLO HARINA DE TRIGO SACO 15 KG EXP ECD|25|XSA|375|20.8700|521.75||50192100||
+1|T01627|PELLETS ARO CEBOLLA HARINA DE TRIGO SC 15 KG|30|XSA|450|20.8700|626.10||50192100||
+1|T01706|ANILLO CHOCOLATE SACO 15 KG|20|XSA|300|20.8700|417.40||50192100||
+1|T03118|PELLETS TOCINETA 3X3 HARINA DE TRIGO  SC 20 KG|210|XSA|4200|27.8200|5842.20||50192100||
+1|T03147|PELLETS TOCINETA 2X2 HARINA DE TRIGO SC 20 KG|100|XSA|2000|27.8200|2782.00||50192100||
+1|T03307|PELLETS FIGURAS VARIAS HARINA DE TRIGO SC 15 KG|25|XSA|375|20.8700|521.75||50192100||
+3|
+3|
+3|
+3|
+3|
+3|
+3|
+3|
+3|
+#FinDetalle
+
+#Conceptos
+EtiquetaIdentificadora|Línea|Artículo|Descripción|Bultos|Kgs|PrecioBulto|Importe|ClaveProdServ|ClaveUnidad|Descuento|NoPedimento|TipoTr|TasaOCuotaTR|BaseTr|CveImpuestoTr|ImporteTr|TipoRt|TasaOCuotaRt|ImporteRt|ObjetoImp
+CONCEPTO|1|T01140|PELLETS 2X3 FUEGO HARINA DE TRIGO  SC 15 KG|          40|600|20.8700|834.80|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:834.8000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|834.80|002|0.00
+TRASLADO|Tasa|0.000000|834.80|003|0.00
+CONCEPTO|1|T01306|PELLETS MINICUADRO 2X3 HARINA DE MAIZ SC 15 KG|         810|12150|20.8700|16904.70|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:16904.7000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|16904.70|002|0.00
+TRASLADO|Tasa|0.000000|16904.70|003|0.00
+CONCEPTO|1|T01320|PELLETS CUADRO XPANDER HARINA DE TRIGO  SC 15 KG|          40|600|20.8700|834.80|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:834.8000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|834.80|002|0.00
+TRASLADO|Tasa|0.000000|834.80|003|0.00
+CONCEPTO|1|T01414|PELLETS ESTRELLA HARINA DE TRIGO SC 15 KG|          25|375|20.8700|521.75|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:521.7500|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|521.75|002|0.00
+TRASLADO|Tasa|0.000000|521.75|003|0.00
+CONCEPTO|1|T01436|PELLETS REJA HARINA DE TRIGO SC 15 KG|          60|900|20.8700|1252.20|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:1252.2000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|1252.20|002|0.00
+TRASLADO|Tasa|0.000000|1252.20|003|0.00
+CONCEPTO|1|T01442|PELLETS RUEDA HARINA DE TRIGO SC 15 KG|         100|1500|20.8700|2087.00|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:2087.0000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|2087.00|002|0.00
+TRASLADO|Tasa|0.000000|2087.00|003|0.00
+CONCEPTO|1|T01446|PELLETS TORNILLO HARINA DE TRIGO SC 15 KG|          50|750|20.8700|1043.50|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:1043.5000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|1043.50|002|0.00
+TRASLADO|Tasa|0.000000|1043.50|003|0.00
+CONCEPTO|1|T01509|PELLETS REJA PAPA HARINA DE PAPA SC 15 KG|          50|750|33.4500|1672.50|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:1672.5000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|1672.50|002|0.00
+TRASLADO|Tasa|0.000000|1672.50|003|0.00
+CONCEPTO|1|T01518|PELLETS PALITO DE PAPA 15 KG.|          15|225|33.4500|501.75|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:501.7500|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|501.75|002|0.00
+TRASLADO|Tasa|0.000000|501.75|003|0.00
+CONCEPTO|1|T01534|PELLETS ANILLO HARINA DE TRIGO SACO 15 KG EXP ECD|          25|375|20.8700|521.75|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:521.7500|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|521.75|002|0.00
+TRASLADO|Tasa|0.000000|521.75|003|0.00
+CONCEPTO|1|T01627|PELLETS ARO CEBOLLA HARINA DE TRIGO SC 15 KG|          30|450|20.8700|626.10|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:626.1000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|626.10|002|0.00
+TRASLADO|Tasa|0.000000|626.10|003|0.00
+CONCEPTO|1|T01706|ANILLO CHOCOLATE SACO 15 KG|          20|300|20.8700|417.40|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:417.4000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|417.40|002|0.00
+TRASLADO|Tasa|0.000000|417.40|003|0.00
+CONCEPTO|1|T03118|PELLETS TOCINETA 3X3 HARINA DE TRIGO  SC 20 KG|         210|4200|27.8200|5842.20|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:5842.2000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|5842.20|002|0.00
+TRASLADO|Tasa|0.000000|5842.20|003|0.00
+CONCEPTO|1|T03147|PELLETS TOCINETA 2X2 HARINA DE TRIGO SC 20 KG|         100|2000|27.8200|2782.00|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:2782.0000|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|2782.00|002|0.00
+TRASLADO|Tasa|0.000000|2782.00|003|0.00
+CONCEPTO|1|T03307|PELLETS FIGURAS VARIAS HARINA DE TRIGO SC 15 KG|          25|375|20.8700|521.75|50192100|XSA|||Factor:Tasa|Tasa o Cuota:0.000000|BaseTr:521.7500|CveImp:002|Importe:0.00||||02
+IMPUESTOS|
+TRASLADOS|
+TRASLADO|Tasa|0.000000|521.75|002|0.00
+TRASLADO|Tasa|0.000000|521.75|003|0.00
+#FinConceptos
+
+#CE
+cExt:Version=1.1
+cExt:TipoOperacion=2
+cExt:ClaveDePedimento=A1
+cExt:CertificadoOrigen=1
+cExt:NumCertificadoOrigen=
+cExt:NumeroExportadorConfiable=
+cExt:Incoterm=FOB
+cExt:Subdivision=0
+cExt:Observaciones=
+cExt:TipoCambioUSD=  18.0362
+cExt:TotalUSD=36364.20
+cExt:MotivoTraslado=
+
+#Propietario
+ResidenciaFiscal|NumRegIdTrib
+#FinPropietario
+
+cExt_Emisor:Curp=MIOP690416HJCCNB03
+
+cExt_Receptor:Curp=
+cExt_Receptor:NumRegIdTrib=1707511356001
+
+cExt_Destinatario:NumRegIdTrib=
+cExt_Destinatario:Rfc=
+cExt_Destinatario:Curp=
+cExt_Destinatario:Nombre=
+
+cExt_Domicilio:Calle=
+cExt_Domicilio:NumeroExterior=
+cExt_Domicilio:NumeroInterior=
+cExt_Domicilio:Colonia=
+cExt_Domicilio:Localidad=
+cExt_Domicilio:Referencia=
+cExt_Domicilio:Municipio=
+cExt_Domicilio:Estado=
+cExt_Domicilio:Pais=
+cExt_Domicilio:CodigoPostal=
+cExt_Domicilio:CodigoPostalCP=si
+
+#DetMercancia
+Item|NoIdentificacion|FraccionArancelaria|CantidadAduana|UnidadAduana|ValorUnitarioAduana|ValorDolares|Marca|Modelo|SubModelo|NumeroSerie|
+1|T01140|1103200201|    600.000|01|1.39|834.800|||||
+2|T01306|1103130100|  12150.000|01|1.39|16904.700|||||
+3|T01320|1103200201|    600.000|01|1.39|834.800|||||
+4|T01414|1103200201|    375.000|01|1.39|521.750|||||
+5|T01436|1103200201|    900.000|01|1.39|1252.200|||||
+6|T01442|1103200201|   1500.000|01|1.39|2087.000|||||
+7|T01446|1103200201|    750.000|01|1.39|1043.500|||||
+8|T01509|1105200100|    750.000|01|2.23|1672.500|||||
+9|T01518|1105200100|    225.000|01|2.23|501.750|||||
+10|T01534|1103200201|    375.000|01|1.39|521.750|||||
+11|T01627|1103200201|    450.000|01|1.39|626.100|||||
+12|T01706|1103200201|    300.000|01|1.39|417.400|||||
+13|T03118|1103200201|   4200.000|01|1.39|5842.200|||||
+14|T03147|1103200201|   2000.000|01|1.39|2782.000|||||
+15|T03307|1103200201|    375.000|01|1.39|521.750|||||
+#FinDetMercancia
+
+#DetalleImpreso
+#FinDetalleImpreso
+#FinComprobante

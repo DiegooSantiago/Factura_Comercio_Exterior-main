@@ -1,0 +1,5085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Certificado="MIIGITCCBAmgAwIBAgIUMDAwMDEwMDAwMDA0MDM5NzIxNDUwDQYJKoZIhvcNAQELBQAwggGyMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMV0wWwYJKoZIhvcNAQkCDE5SZXNwb25zYWJsZTogQWRtaW5pc3RyYWNpw7NuIENlbnRyYWwgZGUgU2VydmljaW9zIFRyaWJ1dGFyaW9zIGFsIENvbnRyaWJ1eWVudGUwHhcNMTYxMDE3MTQ0MzA0WhcNMjAxMDE3MTQ0MzA0WjCBwTEnMCUGA1UEAxMeUEFCTE8gSUdOQUNJTyBNSUNIRUwgT05USVZFUk9TMScwJQYDVQQpEx5QQUJMTyBJR05BQ0lPIE1JQ0hFTCBPTlRJVkVST1MxJzAlBgNVBAoTHlBBQkxPIElHTkFDSU8gTUlDSEVMIE9OVElWRVJPUzEWMBQGA1UELRMNTUlPUDY5MDQxNjlWMjEbMBkGA1UEBRMSTUlPUDY5MDQxNkhKQ0NOQjAzMQ8wDQYDVQQLEwZVbmlkYWQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDc2rM9gUc7ZdVs89DeoThTzTkMLTN5GbhwtYJU1s3aAEDaI1O3ZuM6pvwajr11poKVFRSv5J6hwFDcXo6nOMYpj8JEAvk+g/ms/DYBPYEH7+vwYgZBa4K4jj93IOQlyMOsbU6nVhicvRiklK4B5gyK9bU8Thju6o09mW6elOHc26dJ4+aKdjE0dMdvO5gWzgqJao2Yj96fZTcXcVVNl2a/5MirPz7MchccKslPp94TuAOrJVLQPC+GEj//TjGq3idQccGNhIwJxtQlgIixqC1VLOUSufAITcyHL2UlEyzcOYl0qVR0TGj3p2I8Yx7V9c1II8VjmYyDrOB1g+QOp2epAgMBAAGjHTAbMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgbAMA0GCSqGSIb3DQEBCwUAA4ICAQBDl0ELcEAaQ4kj/AiOXJVoWhoCrMyyRRj1VOWhhMUfyZz5Ib1yz6odEFUIbaRCXgDRygJxIo2myN2Ifs5tiziHFjPeix8L6IlBFWZcsb32HTXRW+SWyR7SnTkLAsAO7aS66fIm2hhRqBs7nWwc/pIN3pRrStyjTDTHjSjNaGWulPEgiaNkawQL5/CoZyOoL3uiESm1uWdDjRmm/lJlBcpRlBkOMGT1+5QzIj1C6D458PF4UNHTFWSZJPa+g3DEbn1GsUtapVMk8kfxY+gFSDAz8luRSuPgwhrnursogHxwoRXGxeVroy/vCk2f6/PLNGn70R41j7hVMIDYaLOZJ+rGyuhg5Tnxi49r3dX/bZVerALugEONhzd5rYQKzujtgnXAlFYsI4VEpSZmp7YJ8D0YQ6TW0q+K/guhTREXgKN46DVtttgKBhX7789ARCTNjEMGao/rhaUokId7WC8qAVeUSE5Kei7awHZ9BLaOmEn72utU5oJXG9AVdli99cPAWQAaUHR1REyZFO2t/tMhgzqWPRDHjk5jJbYAePr0PgFglbpEvWZfReLtpwkP7DgcgUTABHMzZQ5c3r4Qv/NM832yYfC4GTzHdvaghZjy1MVMAq2queoQv80hcjoCL27JuRqZGO6MuLK/sKMKG/N1VZyTrO/eMVNr8WteR+TNxbpc3g==" CondicionesDePago="35 DIAS" Fecha="2019-11-19T17:35:13" Folio="144336" FormaPago="99" LugarExpedicion="44220" MetodoPago="PPD" Moneda="USD" NoCertificado="00001000000403972145" Sello="R5mncjDwVAL4tVWdpcV/BwZGXRHrZon4AkAzzIgnSDptAtfXK+phjqd4A3C3/Sas06aMvY5BAofhRPBB7eKF8ov6iy/Pp7iAL1ZSAU0olZ4nPddfnI1lAkhkaHbKnf9RGGUMtxJUepJVc5aToTZqIcAlasdLZk/+NnU3XJQCQP3xwQu+DpG36Dd4caE+2hqqWAzyxKUYjmXqMCrx4OJqg06D26jc2r+5lD9nwh5tyhL53sPFNxTrksjvanfdYsJEs3mFT14YbCIBZplQ1v17qoUNibxsaWhdteSi5wOZfvTnnUm4pIjuGk7QI+ggpWP6lr02ZsSwhbziDMywidrZfg==" Serie="FP" SubTotal="9541.68" TipoCambio="19.4228" TipoDeComprobante="I" Total="9541.68" Version="3.3" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd"><cfdi:Emisor Nombre="PABLO IGNACIO MICHEL ONTIVEROS" RegimenFiscal="612" Rfc="MIOP6904169V2"/><cfdi:Receptor Nombre="KONG HING SUPERMARKET NV" NumRegIdTrib="1383170" ResidenciaFiscal="ABW" Rfc="XEXX010101000" UsoCFDI="G01"/><cfdi:Conceptos>
+	<cfdi:Concepto Cantidad="2" ClaveProdServ="50192100" ClaveUnidad="XBX" Descripcion="JAPANESE PEANUTS 900 GR / 15 BAGS" Importe="61.40" NoIdentificacion="T18111" ValorUnitario="30.7000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="61.4000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="61.4000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="4" ClaveProdServ="50192100" ClaveUnidad="XBX" Descripcion="CACAHUATE JAPONES MICHEL  38 GR CJ C/16 BLS 14 PZ" Importe="99.88" NoIdentificacion="T18121" ValorUnitario="24.9700">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="99.8800" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="99.8800" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="2" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="GOMA SMART WATCH CJ 21 BOLSAS DE 25 PZ DE 14 GR" Importe="42.88" NoIdentificacion="T10114" ValorUnitario="21.4400">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="42.8800" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="42.8800" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="10" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="GOMITAS DE CONO GORILA CJ CON 10 BOLSAS DE 1 KG" Importe="199.10" NoIdentificacion="T10115" ValorUnitario="19.9100">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="10" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="GOMITAS GUSANIX NEÓN CJ CON 10 BOLSAS DE 1 KG" Importe="199.10" NoIdentificacion="T10117" ValorUnitario="19.9100">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="10" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="GOMITAS GUSANIX AZÚCAR CJ CON 10 BOLSAS DE 1 KG" Importe="199.10" NoIdentificacion="T10118" ValorUnitario="19.9100">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="10" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="GUMMY BEARS 1 KG / 10 BAGS" Importe="199.10" NoIdentificacion="T10210" ValorUnitario="19.9100">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="10" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="GUMMY CONES 1 KG / 10 BAGS" Importe="199.10" NoIdentificacion="T10212" ValorUnitario="19.9100">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="199.1000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="20" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON SUPER FOGATA 780 GR / 5 BAGS" Importe="198.60" NoIdentificacion="T19114" ValorUnitario="9.9300">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="198.6000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="198.6000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="20" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON SUPER CORAZON 780 GRS/ 5 BAGS" Importe="198.60" NoIdentificacion="T19118" ValorUnitario="9.9300">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="198.6000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="198.6000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="15" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON SUPER CUBO 780 GRS / 5 BAGS" Importe="148.95" NoIdentificacion="T19119" ValorUnitario="9.9300">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="148.9500" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="148.9500" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="70" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON GIGANTE 400 GR / 12 BAGS" Importe="742.70" NoIdentificacion="T19147" ValorUnitario="10.6100">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="742.7000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="742.7000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="70" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON MEDIANO 400 GR / 12 BAGS" Importe="742.70" NoIdentificacion="T19148" ValorUnitario="10.6100">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="742.7000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="742.7000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="50" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON BICOLOR GDE MIX  MICHEL CJ C/24 BL 270GR" Importe="811.50" NoIdentificacion="T19156" ValorUnitario="16.2300">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="811.5000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="811.5000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="25" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON GDE MICHEL 270 GR  CORAZÓN BICOLOR CJ 24BL" Importe="405.75" NoIdentificacion="T19158" ValorUnitario="16.2300">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="405.7500" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="405.7500" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="1" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON C/CHOCOLATE  MICHEL 50GR CJ C/60 SOB" Importe="11.00" NoIdentificacion="T19240" ValorUnitario="11.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="11.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="11.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="35" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON MINI MINI 22 GR 4 BAGS/30 PCS" Importe="281.40" NoIdentificacion="T19243" ValorUnitario="8.0400">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="281.4000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="281.4000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="22" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BOMBON BOMBONIX SO HAPPY MICHEL CJ C/24BL DE 240G" Importe="334.18" NoIdentificacion="T19586" ValorUnitario="15.1900">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="334.1800" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="334.1800" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="30" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="MUCHO BOMBON CHICO  COLORES CJ C/24BL 270GR" Importe="540.00" NoIdentificacion="T19598" ValorUnitario="18.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="540.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="540.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="1" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="MINI BARRY CRUCKS MICHEL  9GR CJ C/25BL 180G 20PZ" Importe="22.79" NoIdentificacion="T25115" ValorUnitario="22.7900">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="22.7900" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="22.7900" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="1" ClaveProdServ="50161800" ClaveUnidad="XBX" Descripcion="BARRY CRUCKS MICHEL 22GR  CJ C/25 BL CON 12 PZAS" Importe="27.35" NoIdentificacion="T25116" ValorUnitario="27.3500">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="27.3500" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="27.3500" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="5" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="HOJUELA MAIZ NATURAL MICHEL CJ 4 KG" Importe="40.00" NoIdentificacion="T15141" ValorUnitario="8.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="40.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="40.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="5" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="HOJUELA MAIZ NATURAL MICHEL CAJA 11 KG" Importe="100.00" NoIdentificacion="T15142" ValorUnitario="20.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="100.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="100.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="22" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="CORN FLAKES 500 GR / 12 BOX" Importe="297.00" NoIdentificacion="T15170" ValorUnitario="13.5000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="297.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="297.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="26" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="CORN FLAKES 198 GR / 16 BOX" Importe="234.00" NoIdentificacion="T15176" ValorUnitario="9.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="234.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="234.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="5" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="HOJUELA MAIZ AZUCARADA MICHEL CAJA 5 KG" Importe="47.50" NoIdentificacion="T15204" ValorUnitario="9.5000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="47.5000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="47.5000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="5" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="HOJUELA MAIZ AZUCARADA MICHEL CAJA 15 KG" Importe="140.00" NoIdentificacion="T15205" ValorUnitario="28.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="140.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="140.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="2" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="HOJUELA MAIZ AZUCARADA KINX CAJA 5 KG" Importe="22.00" NoIdentificacion="T15223" ValorUnitario="11.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="22.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="22.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="12" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="FREEZER FLAKES 198 GR / 16 BOX" Importe="108.00" NoIdentificacion="T15279" ValorUnitario="9.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="108.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="108.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="10" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="FREEZER FLAKES MICHEL CJ  CON 12 DISP DE 730 G" Importe="170.00" NoIdentificacion="T15288" ValorUnitario="17.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="170.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="170.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="2" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="DONITAS SABOR FRUTAS PYCUUN MICHEL CAJA 10 KG" Importe="36.00" NoIdentificacion="T17103" ValorUnitario="18.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="36.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="36.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="5" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="DONITAS MULTIGRANO SABOR FRUTAS PYCUUN 4 KG" Importe="40.00" NoIdentificacion="T17142" ValorUnitario="8.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="40.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="40.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="5" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="DONITAS MULTIGRANO SABOR FRUTAS KINX CJ 4 KG" Importe="45.00" NoIdentificacion="T17143" ValorUnitario="9.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="45.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="45.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="15" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="PYCUUN FRUIT RINGS 198 GR / 16 BOX" Importe="135.00" NoIdentificacion="T17167" ValorUnitario="9.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="135.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="135.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="16" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="PYCUUN MICHEL CJ C/12  DISPLAYS DE 500 GR" Importe="144.00" NoIdentificacion="T17172" ValorUnitario="9.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="144.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="144.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="6" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="CHOCO KONG 198 GR /16 BOX" Importe="54.00" NoIdentificacion="T17276" ValorUnitario="9.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="54.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="54.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="6" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="ROCOCOA CHOCO BALLS 198 GR / 16 BOX" Importe="54.00" NoIdentificacion="T17329" ValorUnitario="9.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="54.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="54.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="5" ClaveProdServ="50221200" ClaveUnidad="XBX" Descripcion="CEREAL ARROZ SAB NATURAL DELLYRROZ MICHEL CJ 13KG" Importe="110.00" NoIdentificacion="T17709" ValorUnitario="22.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="110.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+          <cfdi:Traslado Base="110.0000" Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="1" ClaveProdServ="78101700" ClaveUnidad="E48" Descripcion="FLETE MARITIMO 20 PIES" Importe="2000.00" NoIdentificacion="T75058" ValorUnitario="2000.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="2000.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+<cfdi:Concepto Cantidad="1" ClaveProdServ="84131504" ClaveUnidad="E48" Descripcion="SEGURO" Importe="100.00" NoIdentificacion="T75004" ValorUnitario="100.0000">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="100.0000" Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+</cfdi:Conceptos><cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+		<cfdi:Traslados>
+		<cfdi:Traslado Importe="0.00" Impuesto="002" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+<cfdi:Traslado Importe="0.00" Impuesto="003" TasaOCuota="0.000000" TipoFactor="Tasa"/>
+</cfdi:Traslados>
+	</cfdi:Impuestos><cfdi:Complemento>
+		<cce11:ComercioExterior xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" CertificadoOrigen="1" ClaveDePedimento="A1" Incoterm="CIF" Subdivision="0" TipoCambioUSD="19.4228" TipoOperacion="2" TotalUSD="9541.68" Version="1.1" xsi:schemaLocation="http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd">
+	<cce11:Emisor Curp="MIOP690416HJCCNB03">
+	<cce11:Domicilio Calle="ANDRÉS QUINTANA ROO" CodigoPostal="44220" Colonia="0034" Estado="JAL" Localidad="03" Municipio="039" NumeroExterior="1611" Pais="MEX"/>
+	</cce11:Emisor>
+	
+	<cce11:Receptor>
+		<cce11:Domicilio Calle="SCHOTLANDSTRAAT # 33" CodigoPostal="NA" Estado="ARUBA" Localidad="ORANJESTAD" Pais="ABW"/> 		
+	</cce11:Receptor>
+	
+	<cce11:Mercancias>
+	<cce11:Mercancia CantidadAduana="27.000" FraccionArancelaria="20081199" NoIdentificacion="T18111" UnidadAduana="01" ValorDolares="61.40" ValorUnitarioAduana="2.27">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="34.048" FraccionArancelaria="20081199" NoIdentificacion="T18121" UnidadAduana="01" ValorDolares="99.88" ValorUnitarioAduana="2.93">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="14.700" FraccionArancelaria="17049099" NoIdentificacion="T10114" UnidadAduana="01" ValorDolares="42.88" ValorUnitarioAduana="2.92">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="100.000" FraccionArancelaria="17049099" NoIdentificacion="T10115" UnidadAduana="01" ValorDolares="199.10" ValorUnitarioAduana="1.99">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="100.000" FraccionArancelaria="17049099" NoIdentificacion="T10117" UnidadAduana="01" ValorDolares="199.10" ValorUnitarioAduana="1.99">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="100.000" FraccionArancelaria="17049099" NoIdentificacion="T10118" UnidadAduana="01" ValorDolares="199.10" ValorUnitarioAduana="1.99">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="100.000" FraccionArancelaria="17049099" NoIdentificacion="T10210" UnidadAduana="01" ValorDolares="199.10" ValorUnitarioAduana="1.99">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="100.000" FraccionArancelaria="17049099" NoIdentificacion="T10212" UnidadAduana="01" ValorDolares="199.10" ValorUnitarioAduana="1.99">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="78.000" FraccionArancelaria="17049099" NoIdentificacion="T19114" UnidadAduana="01" ValorDolares="198.60" ValorUnitarioAduana="2.55">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="78.000" FraccionArancelaria="17049099" NoIdentificacion="T19118" UnidadAduana="01" ValorDolares="198.60" ValorUnitarioAduana="2.55">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="58.500" FraccionArancelaria="17049099" NoIdentificacion="T19119" UnidadAduana="01" ValorDolares="148.95" ValorUnitarioAduana="2.55">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="336.000" FraccionArancelaria="17049099" NoIdentificacion="T19147" UnidadAduana="01" ValorDolares="742.70" ValorUnitarioAduana="2.21">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="336.000" FraccionArancelaria="17049099" NoIdentificacion="T19148" UnidadAduana="01" ValorDolares="742.70" ValorUnitarioAduana="2.21">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="324.000" FraccionArancelaria="17049099" NoIdentificacion="T19156" UnidadAduana="01" ValorDolares="811.50" ValorUnitarioAduana="2.50">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="162.000" FraccionArancelaria="17049099" NoIdentificacion="T19158" UnidadAduana="01" ValorDolares="405.75" ValorUnitarioAduana="2.50">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="3.000" FraccionArancelaria="18063101" NoIdentificacion="T19240" UnidadAduana="01" ValorDolares="11.00" ValorUnitarioAduana="3.67">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="92.400" FraccionArancelaria="17049099" NoIdentificacion="T19243" UnidadAduana="01" ValorDolares="281.40" ValorUnitarioAduana="3.05">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="126.720" FraccionArancelaria="17049099" NoIdentificacion="T19586" UnidadAduana="01" ValorDolares="334.18" ValorUnitarioAduana="2.64">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="194.400" FraccionArancelaria="17049099" NoIdentificacion="T19598" UnidadAduana="01" ValorDolares="540.00" ValorUnitarioAduana="2.78">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="4.500" FraccionArancelaria="18063101" NoIdentificacion="T25115" UnidadAduana="01" ValorDolares="22.79" ValorUnitarioAduana="5.06">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="6.600" FraccionArancelaria="18063101" NoIdentificacion="T25116" UnidadAduana="01" ValorDolares="27.35" ValorUnitarioAduana="4.14">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="20.000" FraccionArancelaria="19041001" NoIdentificacion="T15141" UnidadAduana="01" ValorDolares="40.00" ValorUnitarioAduana="2.00">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="55.000" FraccionArancelaria="19041001" NoIdentificacion="T15142" UnidadAduana="01" ValorDolares="100.00" ValorUnitarioAduana="1.82">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="132.000" FraccionArancelaria="19041001" NoIdentificacion="T15170" UnidadAduana="01" ValorDolares="297.00" ValorUnitarioAduana="2.25">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="82.368" FraccionArancelaria="19041001" NoIdentificacion="T15176" UnidadAduana="01" ValorDolares="234.00" ValorUnitarioAduana="2.84">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="25.000" FraccionArancelaria="19041001" NoIdentificacion="T15204" UnidadAduana="01" ValorDolares="47.50" ValorUnitarioAduana="1.90">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="75.000" FraccionArancelaria="19041001" NoIdentificacion="T15205" UnidadAduana="01" ValorDolares="140.00" ValorUnitarioAduana="1.87">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="10.000" FraccionArancelaria="19041001" NoIdentificacion="T15223" UnidadAduana="01" ValorDolares="22.00" ValorUnitarioAduana="2.20">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="38.016" FraccionArancelaria="19041001" NoIdentificacion="T15279" UnidadAduana="01" ValorDolares="108.00" ValorUnitarioAduana="2.84">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="87.600" FraccionArancelaria="19041001" NoIdentificacion="T15288" UnidadAduana="01" ValorDolares="170.00" ValorUnitarioAduana="1.94">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="20.000" FraccionArancelaria="19041001" NoIdentificacion="T17103" UnidadAduana="01" ValorDolares="36.00" ValorUnitarioAduana="1.80">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="20.000" FraccionArancelaria="19041001" NoIdentificacion="T17142" UnidadAduana="01" ValorDolares="40.00" ValorUnitarioAduana="2.00">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="20.000" FraccionArancelaria="19041001" NoIdentificacion="T17143" UnidadAduana="01" ValorDolares="45.00" ValorUnitarioAduana="2.25">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="47.520" FraccionArancelaria="19041001" NoIdentificacion="T17167" UnidadAduana="01" ValorDolares="135.00" ValorUnitarioAduana="2.84">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="96.000" FraccionArancelaria="19041001" NoIdentificacion="T17172" UnidadAduana="01" ValorDolares="144.00" ValorUnitarioAduana="1.50">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="19.008" FraccionArancelaria="19041001" NoIdentificacion="T17276" UnidadAduana="01" ValorDolares="54.00" ValorUnitarioAduana="2.84">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="19.008" FraccionArancelaria="19041001" NoIdentificacion="T17329" UnidadAduana="01" ValorDolares="54.00" ValorUnitarioAduana="2.84">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="65.000" FraccionArancelaria="19041001" NoIdentificacion="T17709" UnidadAduana="01" ValorDolares="110.00" ValorUnitarioAduana="1.69">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="1" NoIdentificacion="T75058" UnidadAduana="99" ValorDolares="2000.00" ValorUnitarioAduana="2000.00">
+</cce11:Mercancia>
+<cce11:Mercancia CantidadAduana="1" NoIdentificacion="T75004" UnidadAduana="99" ValorDolares="100.00" ValorUnitarioAduana="100.00">
+</cce11:Mercancia>
+</cce11:Mercancias>
+</cce11:ComercioExterior>
+	<tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" FechaTimbrado="2019-11-19T17:49:46" NoCertificadoSAT="00001000000406725461" RfcProvCertif="FAC100625MC0" SelloCFD="R5mncjDwVAL4tVWdpcV/BwZGXRHrZon4AkAzzIgnSDptAtfXK+phjqd4A3C3/Sas06aMvY5BAofhRPBB7eKF8ov6iy/Pp7iAL1ZSAU0olZ4nPddfnI1lAkhkaHbKnf9RGGUMtxJUepJVc5aToTZqIcAlasdLZk/+NnU3XJQCQP3xwQu+DpG36Dd4caE+2hqqWAzyxKUYjmXqMCrx4OJqg06D26jc2r+5lD9nwh5tyhL53sPFNxTrksjvanfdYsJEs3mFT14YbCIBZplQ1v17qoUNibxsaWhdteSi5wOZfvTnnUm4pIjuGk7QI+ggpWP6lr02ZsSwhbziDMywidrZfg==" SelloSAT="OscuvXhAh2WvO9ev5Zn7bWWfRtm6PEAdhFfO2BEaNUoAAEVBrIOKlPnFqyuYQ+49y9mdrgu74A4v2rRahro+m8jFXwj1Zr+009pF1+nipPa2LISKUQZ+Hm4/Rh5ntK4nJ4fSvi28eKwOsjDY3F341kh8JSHKf2RFHfUXiZ6gG7fd0CSixmvOr3WXJpNobOvOJZdS0dD5O42UxramSlGwWV3w383Mme4KHTif7PGhBpxquwKtDvmGHSTRRXF5AkAk1vc5g3LlSCUcMxr+vUC+Wmclm6VYHhHYacEaTZLJIBkC8gRSP5qr7Q+atahKf22ntnaZaI63+JGUF1uwUotncg==" UUID="77E01382-FFD0-4D39-BD24-51D090CBCC94" Version="1.1" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/timbrefiscaldigital/TimbreFiscalDigitalv11.xsd"/>
+  </cfdi:Complemento><cfdi:Addenda>
+		<fa:Datos xmlns:fa="http://www.itcomplements.com/cfd/v1" xsi:schemaLocation="http://www.itcomplements.com/cfd/v1 http://www.itcomplements.com/cfd/v1/fav1.xsd" version="1.0" tipoDocto="FACTURA" total="9541.68" ResumenTax="IMPUESTOS &gt;&gt; Cve:002 Factor:Tasa Tasa o Cuota:0.00 Base: $9,541.68 Impte: $0.00 &gt;&gt; Cve:003 Factor:Tasa Tasa o Cuota:0.00 Base: $7,441.68 Impte: $0.00" subtotal="9541.68" leyendaPiloto="" printer="RICOH Aficio SP 5200S PCL 6" mail="christian.flores@michel.com.mx,hector.chavez@michel.com.mx,gustavo.galvez@michel.com.mx,jmanzo@michel.com.mx,joseluis.suarez@michel.com.mx,paola.heredia@michel.com.mx" distribucion="" reportada="" fechaEdi="" Ano="2019" mes="11" dia="19" status="1" FormaPago="Por definir" MetodoPago="PPD" RegimenFiscal="" regimenFiscalPDF="Personas Físicas con Actividades Empresariales y Profesionales" FormaPagoPDF="Pago en parcialidades o diferido" TxtRelacion="" infoTit="I M P O R T A N T E" infoCta="La siguiente información bancaria es la única que nuestra empresa reconoce para acreditar pagos: *Beneficiario:PABLO IGNACIO MICHEL ONTIVEROS  *Banco:INTERNATIONAL BANK *Número de cuenta:0755176 *ID Bank / Aba :114915272  *Dirección: 1801 S. 2nd St. McAllen, Texas 78503">
+			<fa:AddendaComercial>
+				<fa:EntregadoEn nombre="" calle="" noExterior="" noInterior="" colonia="" localidad="" referencia="" municipio="" estado="" pais="" codigoPostal=""/>
+				<fa:DireccionEmisor nombre="" calle="ANDRÉS QUINTANA ROO" noExterior="1611" colonia="GUADALUPANA" municipio="GUADALAJARA" estado="JALISCO" pais="MÉXICO" codigoPostal="44220" telEmisor="" curpEm="MIOP690416HJCCNB03"/>
+				
+				<fa:DireccionReceptor nombre="" calle="SCHOTLANDSTRAAT # 33" localidad="ORANJESTAD" estado="ARUBA" pais="ABW" paisPDF="ABW" codigoPostal="NA"/>
+				<fa:Comentarios finDetalle="" finDocumento="" comentariosFac="" leyendaFac=""/>
+				<fa:Empresa fechaGrafico="2019-11-19  17:35:13" telEmisor="(01) 33 3585-55-50, 3823-71-20 FAX (01) 33 35 85-55-79" curpEm="MIOP690416HJCCNB03" telRecep="(297)593.0533" trans1="DAMBER LOGISTICS, S DE RL" numped="290777" numGuia="EXPO000107" ordEnt="303383H" lisPrec="LE310595" ordSal="0396863" nomAge1="FLORES URBANEJA CHRISTIAN" ordComp="(P.O.)201901" extra03Banco="INTERNATIONAL BANK" extra03Cuenta="0755176" obs01="T.Operac:2  Cve:A1  Cert de Orig:1  Num.Cert.Orig:  Incoterm:CIF  TC:  19.4228  TotUSD:9541.68  Edo:ARUBA  País:ABW" obs02="CIF ORANJESTAD, ARUBA" sumaBultos="570.00" sumaKilos="3207.39" diaPag="24" mesPag="12" yearPag="2019" interesPag="3" diaFac="19" mesFac="11" yearFac="2019" idFiscRecep="1383170" etiqCambio="Tipo de cambio aplicado:" auxCambio="19.4228" numCopias="2"/>
+				<fa:Totales subTotal="9541.68" iva="0.00" tasaIva="0%" IEPS="0.00" total="9541.68" cantidadConLetra="NUEVE MIL QUINIENTOS CUARENTA Y UN  DOLARES 68/100 U.S." totalMX="" ivaMX=""/>
+	<fa:Grafico>
+	<fa:GrafDetalle ClaveProdServ="50192100" NoIdentificacion="T18111" Cantidad="2" ClaveUnidad="XBX" Unidad="27" Descripcion="JAPANESE PEANUTS 900 GR / 15 BAGS" ValorUnitario="30.7000" Importe="61.40"/>
+<fa:GrafDetalle ClaveProdServ="50192100" NoIdentificacion="T18121" Cantidad="4" ClaveUnidad="XBX" Unidad="34.048" Descripcion="CACAHUATE JAPONES MICHEL  38 GR CJ C/16 BLS 14 PZ" ValorUnitario="24.9700" Importe="99.88"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T10114" Cantidad="2" ClaveUnidad="XBX" Unidad="14.7" Descripcion="GOMA SMART WATCH CJ 21 BOLSAS DE 25 PZ DE 14 GR" ValorUnitario="21.4400" Importe="42.88"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T10115" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GOMITAS DE CONO GORILA CJ CON 10 BOLSAS DE 1 KG" ValorUnitario="19.9100" Importe="199.10"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T10117" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GOMITAS GUSANIX NEÓN CJ CON 10 BOLSAS DE 1 KG" ValorUnitario="19.9100" Importe="199.10"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T10118" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GOMITAS GUSANIX AZÚCAR CJ CON 10 BOLSAS DE 1 KG" ValorUnitario="19.9100" Importe="199.10"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T10210" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GUMMY BEARS 1 KG / 10 BAGS" ValorUnitario="19.9100" Importe="199.10"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T10212" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GUMMY CONES 1 KG / 10 BAGS" ValorUnitario="19.9100" Importe="199.10"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19114" Cantidad="20" ClaveUnidad="XBX" Unidad="78" Descripcion="BOMBON SUPER FOGATA 780 GR / 5 BAGS" ValorUnitario="9.9300" Importe="198.60"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19118" Cantidad="20" ClaveUnidad="XBX" Unidad="78" Descripcion="BOMBON SUPER CORAZON 780 GRS/ 5 BAGS" ValorUnitario="9.9300" Importe="198.60"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19119" Cantidad="15" ClaveUnidad="XBX" Unidad="58.5" Descripcion="BOMBON SUPER CUBO 780 GRS / 5 BAGS" ValorUnitario="9.9300" Importe="148.95"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19147" Cantidad="70" ClaveUnidad="XBX" Unidad="336" Descripcion="BOMBON GIGANTE 400 GR / 12 BAGS" ValorUnitario="10.6100" Importe="742.70"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19148" Cantidad="70" ClaveUnidad="XBX" Unidad="336" Descripcion="BOMBON MEDIANO 400 GR / 12 BAGS" ValorUnitario="10.6100" Importe="742.70"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19156" Cantidad="50" ClaveUnidad="XBX" Unidad="324" Descripcion="BOMBON BICOLOR GDE MIX  MICHEL CJ C/24 BL 270GR" ValorUnitario="16.2300" Importe="811.50"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19158" Cantidad="25" ClaveUnidad="XBX" Unidad="162" Descripcion="BOMBON GDE MICHEL 270 GR  CORAZÓN BICOLOR CJ 24BL" ValorUnitario="16.2300" Importe="405.75"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19240" Cantidad="1" ClaveUnidad="XBX" Unidad="3" Descripcion="BOMBON C/CHOCOLATE  MICHEL 50GR CJ C/60 SOB" ValorUnitario="11.0000" Importe="11.00"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19243" Cantidad="35" ClaveUnidad="XBX" Unidad="92.4" Descripcion="BOMBON MINI MINI 22 GR 4 BAGS/30 PCS" ValorUnitario="8.0400" Importe="281.40"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19586" Cantidad="22" ClaveUnidad="XBX" Unidad="126.72" Descripcion="BOMBON BOMBONIX SO HAPPY MICHEL CJ C/24BL DE 240G" ValorUnitario="15.1900" Importe="334.18"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T19598" Cantidad="30" ClaveUnidad="XBX" Unidad="194.4" Descripcion="MUCHO BOMBON CHICO  COLORES CJ C/24BL 270GR" ValorUnitario="18.0000" Importe="540.00"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T25115" Cantidad="1" ClaveUnidad="XBX" Unidad="4.5" Descripcion="MINI BARRY CRUCKS MICHEL  9GR CJ C/25BL 180G 20PZ" ValorUnitario="22.7900" Importe="22.79"/>
+<fa:GrafDetalle ClaveProdServ="50161800" NoIdentificacion="T25116" Cantidad="1" ClaveUnidad="XBX" Unidad="6.6" Descripcion="BARRY CRUCKS MICHEL 22GR  CJ C/25 BL CON 12 PZAS" ValorUnitario="27.3500" Importe="27.35"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15141" Cantidad="5" ClaveUnidad="XBX" Unidad="20" Descripcion="HOJUELA MAIZ NATURAL MICHEL CJ 4 KG" ValorUnitario="8.0000" Importe="40.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15142" Cantidad="5" ClaveUnidad="XBX" Unidad="55" Descripcion="HOJUELA MAIZ NATURAL MICHEL CAJA 11 KG" ValorUnitario="20.0000" Importe="100.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15170" Cantidad="22" ClaveUnidad="XBX" Unidad="132" Descripcion="CORN FLAKES 500 GR / 12 BOX" ValorUnitario="13.5000" Importe="297.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15176" Cantidad="26" ClaveUnidad="XBX" Unidad="82.368" Descripcion="CORN FLAKES 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="234.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15204" Cantidad="5" ClaveUnidad="XBX" Unidad="25" Descripcion="HOJUELA MAIZ AZUCARADA MICHEL CAJA 5 KG" ValorUnitario="9.5000" Importe="47.50"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15205" Cantidad="5" ClaveUnidad="XBX" Unidad="75" Descripcion="HOJUELA MAIZ AZUCARADA MICHEL CAJA 15 KG" ValorUnitario="28.0000" Importe="140.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15223" Cantidad="2" ClaveUnidad="XBX" Unidad="10" Descripcion="HOJUELA MAIZ AZUCARADA KINX CAJA 5 KG" ValorUnitario="11.0000" Importe="22.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15279" Cantidad="12" ClaveUnidad="XBX" Unidad="38.016" Descripcion="FREEZER FLAKES 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="108.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T15288" Cantidad="10" ClaveUnidad="XBX" Unidad="87.6" Descripcion="FREEZER FLAKES MICHEL CJ  CON 12 DISP DE 730 G" ValorUnitario="17.0000" Importe="170.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17103" Cantidad="2" ClaveUnidad="XBX" Unidad="20" Descripcion="DONITAS SABOR FRUTAS PYCUUN MICHEL CAJA 10 KG" ValorUnitario="18.0000" Importe="36.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17142" Cantidad="5" ClaveUnidad="XBX" Unidad="20" Descripcion="DONITAS MULTIGRANO SABOR FRUTAS PYCUUN 4 KG" ValorUnitario="8.0000" Importe="40.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17143" Cantidad="5" ClaveUnidad="XBX" Unidad="20" Descripcion="DONITAS MULTIGRANO SABOR FRUTAS KINX CJ 4 KG" ValorUnitario="9.0000" Importe="45.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17167" Cantidad="15" ClaveUnidad="XBX" Unidad="47.52" Descripcion="PYCUUN FRUIT RINGS 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="135.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17172" Cantidad="16" ClaveUnidad="XBX" Unidad="96" Descripcion="PYCUUN MICHEL CJ C/12  DISPLAYS DE 500 GR" ValorUnitario="9.0000" Importe="144.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17276" Cantidad="6" ClaveUnidad="XBX" Unidad="19.008" Descripcion="CHOCO KONG 198 GR /16 BOX" ValorUnitario="9.0000" Importe="54.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17329" Cantidad="6" ClaveUnidad="XBX" Unidad="19.008" Descripcion="ROCOCOA CHOCO BALLS 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="54.00"/>
+<fa:GrafDetalle ClaveProdServ="50221200" NoIdentificacion="T17709" Cantidad="5" ClaveUnidad="XBX" Unidad="65" Descripcion="CEREAL ARROZ SAB NATURAL DELLYRROZ MICHEL CJ 13KG" ValorUnitario="22.0000" Importe="110.00"/>
+<fa:GrafDetalle ClaveProdServ="78101700" NoIdentificacion="T75058" Cantidad="1" ClaveUnidad="E48" Unidad="0" Descripcion="FLETE MARITIMO 20 PIES" ValorUnitario="2000.0000" Importe="2000.00"/>
+<fa:GrafDetalle ClaveProdServ="84131504" NoIdentificacion="T75004" Cantidad="1" ClaveUnidad="E48" Unidad="0" Descripcion="SEGURO" ValorUnitario="100.0000" Importe="100.00"/>
+<fa:Detalle ClaveProdServ="50192100" NoIdentificacion="T18111" Cantidad="2" ClaveUnidad="XBX" Unidad="27" Descripcion="JAPANESE PEANUTS 900 GR / 15 BAGS" ValorUnitario="30.7000" Importe="61.40" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50192100" NoIdentificacion="T18121" Cantidad="4" ClaveUnidad="XBX" Unidad="34048" Descripcion="CACAHUATE JAPONES MICHEL  38 GR CJ C/16 BLS 14 PZ" ValorUnitario="24.9700" Importe="99.88" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T10114" Cantidad="2" ClaveUnidad="XBX" Unidad="147" Descripcion="GOMA SMART WATCH CJ 21 BOLSAS DE 25 PZ DE 14 GR" ValorUnitario="21.4400" Importe="42.88" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T10115" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GOMITAS DE CONO GORILA CJ CON 10 BOLSAS DE 1 KG" ValorUnitario="19.9100" Importe="199.10" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T10117" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GOMITAS GUSANIX NEÓN CJ CON 10 BOLSAS DE 1 KG" ValorUnitario="19.9100" Importe="199.10" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T10118" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GOMITAS GUSANIX AZÚCAR CJ CON 10 BOLSAS DE 1 KG" ValorUnitario="19.9100" Importe="199.10" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T10210" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GUMMY BEARS 1 KG / 10 BAGS" ValorUnitario="19.9100" Importe="199.10" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T10212" Cantidad="10" ClaveUnidad="XBX" Unidad="100" Descripcion="GUMMY CONES 1 KG / 10 BAGS" ValorUnitario="19.9100" Importe="199.10" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19114" Cantidad="20" ClaveUnidad="XBX" Unidad="78" Descripcion="BOMBON SUPER FOGATA 780 GR / 5 BAGS" ValorUnitario="9.9300" Importe="198.60" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19118" Cantidad="20" ClaveUnidad="XBX" Unidad="78" Descripcion="BOMBON SUPER CORAZON 780 GRS/ 5 BAGS" ValorUnitario="9.9300" Importe="198.60" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19119" Cantidad="15" ClaveUnidad="XBX" Unidad="585" Descripcion="BOMBON SUPER CUBO 780 GRS / 5 BAGS" ValorUnitario="9.9300" Importe="148.95" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19147" Cantidad="70" ClaveUnidad="XBX" Unidad="336" Descripcion="BOMBON GIGANTE 400 GR / 12 BAGS" ValorUnitario="10.6100" Importe="742.70" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19148" Cantidad="70" ClaveUnidad="XBX" Unidad="336" Descripcion="BOMBON MEDIANO 400 GR / 12 BAGS" ValorUnitario="10.6100" Importe="742.70" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19156" Cantidad="50" ClaveUnidad="XBX" Unidad="324" Descripcion="BOMBON BICOLOR GDE MIX  MICHEL CJ C/24 BL 270GR" ValorUnitario="16.2300" Importe="811.50" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19158" Cantidad="25" ClaveUnidad="XBX" Unidad="162" Descripcion="BOMBON GDE MICHEL 270 GR  CORAZÓN BICOLOR CJ 24BL" ValorUnitario="16.2300" Importe="405.75" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19240" Cantidad="1" ClaveUnidad="XBX" Unidad="3" Descripcion="BOMBON C/CHOCOLATE  MICHEL 50GR CJ C/60 SOB" ValorUnitario="11.0000" Importe="11.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19243" Cantidad="35" ClaveUnidad="XBX" Unidad="924" Descripcion="BOMBON MINI MINI 22 GR 4 BAGS/30 PCS" ValorUnitario="8.0400" Importe="281.40" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19586" Cantidad="22" ClaveUnidad="XBX" Unidad="12672" Descripcion="BOMBON BOMBONIX SO HAPPY MICHEL CJ C/24BL DE 240G" ValorUnitario="15.1900" Importe="334.18" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T19598" Cantidad="30" ClaveUnidad="XBX" Unidad="1944" Descripcion="MUCHO BOMBON CHICO  COLORES CJ C/24BL 270GR" ValorUnitario="18.0000" Importe="540.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T25115" Cantidad="1" ClaveUnidad="XBX" Unidad="45" Descripcion="MINI BARRY CRUCKS MICHEL  9GR CJ C/25BL 180G 20PZ" ValorUnitario="22.7900" Importe="22.79" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50161800" NoIdentificacion="T25116" Cantidad="1" ClaveUnidad="XBX" Unidad="66" Descripcion="BARRY CRUCKS MICHEL 22GR  CJ C/25 BL CON 12 PZAS" ValorUnitario="27.3500" Importe="27.35" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15141" Cantidad="5" ClaveUnidad="XBX" Unidad="20" Descripcion="HOJUELA MAIZ NATURAL MICHEL CJ 4 KG" ValorUnitario="8.0000" Importe="40.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15142" Cantidad="5" ClaveUnidad="XBX" Unidad="55" Descripcion="HOJUELA MAIZ NATURAL MICHEL CAJA 11 KG" ValorUnitario="20.0000" Importe="100.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15170" Cantidad="22" ClaveUnidad="XBX" Unidad="132" Descripcion="CORN FLAKES 500 GR / 12 BOX" ValorUnitario="13.5000" Importe="297.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15176" Cantidad="26" ClaveUnidad="XBX" Unidad="82368" Descripcion="CORN FLAKES 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="234.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15204" Cantidad="5" ClaveUnidad="XBX" Unidad="25" Descripcion="HOJUELA MAIZ AZUCARADA MICHEL CAJA 5 KG" ValorUnitario="9.5000" Importe="47.50" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15205" Cantidad="5" ClaveUnidad="XBX" Unidad="75" Descripcion="HOJUELA MAIZ AZUCARADA MICHEL CAJA 15 KG" ValorUnitario="28.0000" Importe="140.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15223" Cantidad="2" ClaveUnidad="XBX" Unidad="10" Descripcion="HOJUELA MAIZ AZUCARADA KINX CAJA 5 KG" ValorUnitario="11.0000" Importe="22.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15279" Cantidad="12" ClaveUnidad="XBX" Unidad="38016" Descripcion="FREEZER FLAKES 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="108.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T15288" Cantidad="10" ClaveUnidad="XBX" Unidad="876" Descripcion="FREEZER FLAKES MICHEL CJ  CON 12 DISP DE 730 G" ValorUnitario="17.0000" Importe="170.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17103" Cantidad="2" ClaveUnidad="XBX" Unidad="20" Descripcion="DONITAS SABOR FRUTAS PYCUUN MICHEL CAJA 10 KG" ValorUnitario="18.0000" Importe="36.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17142" Cantidad="5" ClaveUnidad="XBX" Unidad="20" Descripcion="DONITAS MULTIGRANO SABOR FRUTAS PYCUUN 4 KG" ValorUnitario="8.0000" Importe="40.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17143" Cantidad="5" ClaveUnidad="XBX" Unidad="20" Descripcion="DONITAS MULTIGRANO SABOR FRUTAS KINX CJ 4 KG" ValorUnitario="9.0000" Importe="45.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17167" Cantidad="15" ClaveUnidad="XBX" Unidad="4752" Descripcion="PYCUUN FRUIT RINGS 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="135.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17172" Cantidad="16" ClaveUnidad="XBX" Unidad="96" Descripcion="PYCUUN MICHEL CJ C/12  DISPLAYS DE 500 GR" ValorUnitario="9.0000" Importe="144.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17276" Cantidad="6" ClaveUnidad="XBX" Unidad="19008" Descripcion="CHOCO KONG 198 GR /16 BOX" ValorUnitario="9.0000" Importe="54.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17329" Cantidad="6" ClaveUnidad="XBX" Unidad="19008" Descripcion="ROCOCOA CHOCO BALLS 198 GR / 16 BOX" ValorUnitario="9.0000" Importe="54.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="50221200" NoIdentificacion="T17709" Cantidad="5" ClaveUnidad="XBX" Unidad="65" Descripcion="CEREAL ARROZ SAB NATURAL DELLYRROZ MICHEL CJ 13KG" ValorUnitario="22.0000" Importe="110.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="78101700" NoIdentificacion="T75058" Cantidad="1" ClaveUnidad="E48" Unidad="0" Descripcion="FLETE MARITIMO 20 PIES" ValorUnitario="2000.0000" Importe="2000.00" comentario2="Factor:Tasa"/>
+<fa:Detalle ClaveProdServ="84131504" NoIdentificacion="T75004" Cantidad="1" ClaveUnidad="E48" Unidad="0" Descripcion="SEGURO" ValorUnitario="100.0000" Importe="100.00" comentario2="Factor:Tasa"/>
+</fa:Grafico>
+				<fa:Detallista/> 
+			</fa:AddendaComercial>
+			<fa:hfd version="1.0">~|0|Z0 Xi
+~K1="Times New Roman" n 8
+~K2="Times New Roman" n 5 
+~K3="Times New Roman" 6
+~K4="Times New Roman" 7
+~K5="Times New Roman" n 6
+~K6="Times New Roman" 5
+~K7="Times New Roman" n 7
+~K8="Times New Roman" 5 20.20.80
+~K9="Times New Roman" 6 100.100.100
+
+~&lt;P'=1' A "FONDO_-1.bmp"
+~&gt;
+
+~H|0|
+~[100
+~#|0 e+|
+~]
+
+~[3 100
+~#
+~#
+~[85 1 14
+~#
+~[40 53 7
+~#
+~[100
+~#|e+| @1 Jc
+PABLO IGNACIO MICHEL ONTIVEROS
+~#|e+| @7 Jc
+ANDRÉS QUINTANA ROO No. 1611  C.P. 44220
+~#|e+| @7 Jc
+Col. GUADALUPANA
+~#|e+| @7 Jc
+(01) 33 3585-55-50, 3823-71-20 FAX (01) 33 35 85-55-79
+~#|e+| @7 Jc
+GUADALAJARA, JALISCO, MÉXICO
+~#|e+| @7 Jc
+R.F.C. MIOP6904169V2 CURP:MIOP690416HJCCNB03
+~]
+~#
+~[100
+~#|0 e+|M55.55 @7 Jc
+Este documento es una representación impresa de un "CFDI"  version 3.3
+~&lt;Z15
+~&gt;
+~#|e+| @2 Jc
+METODO PAGO: PPD,  Pago en parcialidades o diferido  USO CFDI:G01 
+~#|0 e+|M55.55 @5 Jc
+REGIMEN FISCAL: 612. Personas Físicas con Actividades Empresariales y Profesionales.  TIPO COMPROBANTE: I 
+~#
+~[28 10 35 3 3
+~#|0 e+|M35.5 @7 Jc
+FECHA DE EMISION
+
+@42019-11-19  17:35:13
+~#|0 e+|
+~#|0 e+|M35.5 @7 Jc
+LUGAR DE EXPEDICION: 
+
+@4 44220 
+
+~#|0 e+|
+~#|0 e+|M35.5 @5 Jc
+
+~]
+~]
+~#
+~[100
+~#|e+| @3 Jc
+Pag @p/@P
+~]
+~]
+
+~#
+
+~#
+~[100
+~#|11.5 f1.8 gulg e+|Jc 
+@9 FOLIO INTERNO
+~#|11.5 u0 gdrg e+|Jc
+@- FP144336
+~#|0 e+|M25.25
+~#|11.5 f1.8 gulg e+|Jc 
+@9 FOLIO FISCAL
+~#|11.5 u0 gdrg e+|Jc
+@6 77E01382-FFD0-4D39-BD24-51D090CBCC94
+~]
+~]
+~[58 42
+~#
+~[100
+~#|7.4 gdlrug e+ r7.3|M365.280 @4 Jl
+KONG HING SUPERMARKET NV
+~&lt;Z11
+~&gt;
+SCHOTLANDSTRAAT # 33  
+~&lt;Z11
+~&gt;
+   NA
+~&lt;Z11
+~&gt;
+ORANJESTAD  
+~&lt;Z11
+~&gt;
+ ARUBA ABW 
+~&lt;Z11
+~&gt;
+1383170
+~&lt;Z11
+~&gt;
+(297)593.0533
+~]
+~#
+~[100
+~#|7.4 glug e+ d7.0|
+~[100
+~#|0 e+ |M60.60 @7 Jl
+TRANSPORTE @4 DAMBER LOGISTICS, S DE RL  
+
+@4 
+~]
+~#
+~[40 60
+~#|7.4 e+ r11.0|M55.55 @7 Jl
+PEDIDO  @4 290777
+~#|7.4 e+|M30.30 @7 Jl
+No. DE GUIA  @4 EXPO000107
+~]
+~#
+~[40 60
+~#|7.4 e+ r11.0 u7.0|M30.30 @7 Jl
+O.E.  @4 303383H
+~#|7.4 e+ u7.0|M30.30 @7 Jl
+No. DE SALIDA  @4 0396863
+~]
+~#
+~[70 30
+~#|7.4 e+ r11.0 u7.0|M30.30 @7 Jl
+CONDICIONES DE PAGO  @4 35 DIAS
+~#|7.4 e+ u7.0|M30.30 @7 Jl
+LISTA  @4 LE310595
+~]
+~#|7.4 e+ u7.0|M30.30 @7 Jl
+AGTE:  @4 FLORES URBANEJA CHRISTIAN
+~#|7.4 gdrg e+ u7.0 d7.2|M30.30 @7 Jl
+ORDEN DE COMPRA  @4(P.O.)201901
+~#|7.4 e+ u7.0|M30.30 @7 Jl
+Tipo Rel:  *UUID Rel: 
+
+~]
+~]
+
+~&lt;Z0.9
+~&gt;
+~[45 55
+~#|7.4 gdlrug e+ u7.3|
+~[100
+~#|0 e+|Jl
+~[25 30 25 20
+~#|0 e+|M50.50 @7 Jl
+BANCO
+~#|0 e+|M50.50 @7 Jl
+CUENTA CLABE
+~#|0 e+|M50.50 @7 Jl
+CUENTA
+~#|0 e+|M50.50 @7 Jl
+REFERENCIA 
+~]
+
+~#|0 e+|Jl
+~[25 30 25 20
+~#|0 e+|@4 Jl
+INTERNATIONAL BANK  
+~#|0 e+|@4 Jl
+ 
+~#|0 e+|@4 Jl
+0755176 
+~#|0 e+|@4 Jl
+ 
+~]
+
+~#|0 e+|Jl
+~[25 30 25 20
+~#|0 e+|@4 Jl
+  
+~#|0 e+|@4 Jl
+ 
+~#|0 e+|@4 Jl
+ 
+~#|0 e+|@4 Jl
+ 
+~]
+
+~#|0 e+|Jl
+~[25 30 25 20
+~#|0 e+|@4 Jl
+  
+~#|0 e+|@4 Jl
+ 
+~#|0 e+|@4 Jl
+ 
+~#|0 e+|@4 Jl
+ 
+~]
+
+~#|0 e+|Jl
+~[25 30 25 20
+~#|0 e+|@4 Jl
+@6.  
+~#|0 e+|@4 Jl
+ 
+~#|0 e+|@4 Jl
+ 
+~#|0 e+|@4 Jl
+ 
+~]
+
+~#|0 e+|Jl
+~[30 70
+~#|0 e+|@4 Jr
+FORMA DE PAGO:  
+~#|0 e+|@4 Jl
+99 Por definir
+~#|0 e+|@4 Jl
+MONEDA: USD
+~#|0 e+|@4 Jl
+TIPO CAMBIO: 19.4228
+~#|0 e+|@4 Jl
+~]
+
+~#|0 e+|Jl
+~[20 55 25
+~#|0 e+|@4 Jr
+
+~#|0 e+|@4 Jr
+FECHA DE VENCIMIENTO:  
+~#|0 e+|@4 Jl
+ @7 2019-12-24  
+~]
+
+
+~]
+
+~# 
+~[100
+~#|7.4 gdlrug e+ l11.3|M305.305 @4 Jl
+ 
+~&lt;Z5
+~&gt;
+
+~&lt;Z5
+~&gt;
+
+~&lt;Z5
+~&gt;
+
+~&lt;Z5
+~&gt;
+
+~&lt;Z5
+~&gt;
+
+~&lt;Z5
+~&gt;
+
+~]
+~]
+~]
+~&gt;
+
+~&lt;Z0.9
+~&gt;
+
+~[3 100
+~#|0 e+|
+~#|0 e+|
+~[8 8 46 8 7 6 9 9 13
+~#|7.4 ru7.0 glg f1.8 e+|Jc @9
+CVE ARTIC
+~#|7.4 ru7.0 f1.8 e+|Jc @9
+COD SAT
+~#|7.4 ru7.0 f1.8 e+|Jc @9
+DESCRIPCION
+~#|7.4 ru7.0 f1.8 e+|Jc @9
+BULTOS
+~#|7.4 ru7.0 f1.8 e+|Jc @9
+U.M. SAT
+~#|7.4 ru7.0 f1.8 e+|Jc @9
+KGS
+~#|7.4 ru7.0 f1.8 e+|Jc @9
+VALOR UNITARIO
+~#|7.4 ru7.0 f1.8 e+|Jc @9
+DESCUENTO
+~#|7.4 u7.0 f1.8 gug e+|Jc @9
+IMPORTE
+~]
+
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T18111
+~# Jl @7
+50192100
+~#  Jl @7
+JAPANESE PEANUTS 900 GR / 15 BAGS
+~#  Jc @7
+2
+~#  Jc @7
+XBX
+~#  Jc @7
+27
+~#  Jr |r20| @7
+30.7000
+~#  Jr |r20| @7
+
+~#  Jr @7
+61.40
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T18121
+~# Jl @7
+50192100
+~#  Jl @7
+CACAHUATE JAPONES MICHEL  38 GR CJ C/16 BLS 14 PZ
+~#  Jc @7
+4
+~#  Jc @7
+XBX
+~#  Jc @7
+34.048
+~#  Jr |r20| @7
+24.9700
+~#  Jr |r20| @7
+
+~#  Jr @7
+99.88
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T10114
+~# Jl @7
+50161800
+~#  Jl @7
+GOMA SMART WATCH CJ 21 BOLSAS DE 25 PZ DE 14 GR
+~#  Jc @7
+2
+~#  Jc @7
+XBX
+~#  Jc @7
+14.7
+~#  Jr |r20| @7
+21.4400
+~#  Jr |r20| @7
+
+~#  Jr @7
+42.88
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T10115
+~# Jl @7
+50161800
+~#  Jl @7
+GOMITAS DE CONO GORILA CJ CON 10 BOLSAS DE 1 KG
+~#  Jc @7
+10
+~#  Jc @7
+XBX
+~#  Jc @7
+100
+~#  Jr |r20| @7
+19.9100
+~#  Jr |r20| @7
+
+~#  Jr @7
+199.10
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T10117
+~# Jl @7
+50161800
+~#  Jl @7
+GOMITAS GUSANIX NEÓN CJ CON 10 BOLSAS DE 1 KG
+~#  Jc @7
+10
+~#  Jc @7
+XBX
+~#  Jc @7
+100
+~#  Jr |r20| @7
+19.9100
+~#  Jr |r20| @7
+
+~#  Jr @7
+199.10
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T10118
+~# Jl @7
+50161800
+~#  Jl @7
+GOMITAS GUSANIX AZÚCAR CJ CON 10 BOLSAS DE 1 KG
+~#  Jc @7
+10
+~#  Jc @7
+XBX
+~#  Jc @7
+100
+~#  Jr |r20| @7
+19.9100
+~#  Jr |r20| @7
+
+~#  Jr @7
+199.10
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T10210
+~# Jl @7
+50161800
+~#  Jl @7
+GUMMY BEARS 1 KG / 10 BAGS
+~#  Jc @7
+10
+~#  Jc @7
+XBX
+~#  Jc @7
+100
+~#  Jr |r20| @7
+19.9100
+~#  Jr |r20| @7
+
+~#  Jr @7
+199.10
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T10212
+~# Jl @7
+50161800
+~#  Jl @7
+GUMMY CONES 1 KG / 10 BAGS
+~#  Jc @7
+10
+~#  Jc @7
+XBX
+~#  Jc @7
+100
+~#  Jr |r20| @7
+19.9100
+~#  Jr |r20| @7
+
+~#  Jr @7
+199.10
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19114
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON SUPER FOGATA 780 GR / 5 BAGS
+~#  Jc @7
+20
+~#  Jc @7
+XBX
+~#  Jc @7
+78
+~#  Jr |r20| @7
+9.9300
+~#  Jr |r20| @7
+
+~#  Jr @7
+198.60
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19118
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON SUPER CORAZON 780 GRS/ 5 BAGS
+~#  Jc @7
+20
+~#  Jc @7
+XBX
+~#  Jc @7
+78
+~#  Jr |r20| @7
+9.9300
+~#  Jr |r20| @7
+
+~#  Jr @7
+198.60
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19119
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON SUPER CUBO 780 GRS / 5 BAGS
+~#  Jc @7
+15
+~#  Jc @7
+XBX
+~#  Jc @7
+58.5
+~#  Jr |r20| @7
+9.9300
+~#  Jr |r20| @7
+
+~#  Jr @7
+148.95
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19147
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON GIGANTE 400 GR / 12 BAGS
+~#  Jc @7
+70
+~#  Jc @7
+XBX
+~#  Jc @7
+336
+~#  Jr |r20| @7
+10.6100
+~#  Jr |r20| @7
+
+~#  Jr @7
+742.70
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19148
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON MEDIANO 400 GR / 12 BAGS
+~#  Jc @7
+70
+~#  Jc @7
+XBX
+~#  Jc @7
+336
+~#  Jr |r20| @7
+10.6100
+~#  Jr |r20| @7
+
+~#  Jr @7
+742.70
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19156
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON BICOLOR GDE MIX  MICHEL CJ C/24 BL 270GR
+~#  Jc @7
+50
+~#  Jc @7
+XBX
+~#  Jc @7
+324
+~#  Jr |r20| @7
+16.2300
+~#  Jr |r20| @7
+
+~#  Jr @7
+811.50
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19158
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON GDE MICHEL 270 GR  CORAZÓN BICOLOR CJ 24BL
+~#  Jc @7
+25
+~#  Jc @7
+XBX
+~#  Jc @7
+162
+~#  Jr |r20| @7
+16.2300
+~#  Jr |r20| @7
+
+~#  Jr @7
+405.75
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19240
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON C/CHOCOLATE  MICHEL 50GR CJ C/60 SOB
+~#  Jc @7
+1
+~#  Jc @7
+XBX
+~#  Jc @7
+3
+~#  Jr |r20| @7
+11.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+11.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19243
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON MINI MINI 22 GR 4 BAGS/30 PCS
+~#  Jc @7
+35
+~#  Jc @7
+XBX
+~#  Jc @7
+92.4
+~#  Jr |r20| @7
+8.0400
+~#  Jr |r20| @7
+
+~#  Jr @7
+281.40
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19586
+~# Jl @7
+50161800
+~#  Jl @7
+BOMBON BOMBONIX SO HAPPY MICHEL CJ C/24BL DE 240G
+~#  Jc @7
+22
+~#  Jc @7
+XBX
+~#  Jc @7
+126.72
+~#  Jr |r20| @7
+15.1900
+~#  Jr |r20| @7
+
+~#  Jr @7
+334.18
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T19598
+~# Jl @7
+50161800
+~#  Jl @7
+MUCHO BOMBON CHICO  COLORES CJ C/24BL 270GR
+~#  Jc @7
+30
+~#  Jc @7
+XBX
+~#  Jc @7
+194.4
+~#  Jr |r20| @7
+18.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+540.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T25115
+~# Jl @7
+50161800
+~#  Jl @7
+MINI BARRY CRUCKS MICHEL  9GR CJ C/25BL 180G 20PZ
+~#  Jc @7
+1
+~#  Jc @7
+XBX
+~#  Jc @7
+4.5
+~#  Jr |r20| @7
+22.7900
+~#  Jr |r20| @7
+
+~#  Jr @7
+22.79
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T25116
+~# Jl @7
+50161800
+~#  Jl @7
+BARRY CRUCKS MICHEL 22GR  CJ C/25 BL CON 12 PZAS
+~#  Jc @7
+1
+~#  Jc @7
+XBX
+~#  Jc @7
+6.6
+~#  Jr |r20| @7
+27.3500
+~#  Jr |r20| @7
+
+~#  Jr @7
+27.35
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15141
+~# Jl @7
+50221200
+~#  Jl @7
+HOJUELA MAIZ NATURAL MICHEL CJ 4 KG
+~#  Jc @7
+5
+~#  Jc @7
+XBX
+~#  Jc @7
+20
+~#  Jr |r20| @7
+8.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+40.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15142
+~# Jl @7
+50221200
+~#  Jl @7
+HOJUELA MAIZ NATURAL MICHEL CAJA 11 KG
+~#  Jc @7
+5
+~#  Jc @7
+XBX
+~#  Jc @7
+55
+~#  Jr |r20| @7
+20.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+100.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15170
+~# Jl @7
+50221200
+~#  Jl @7
+CORN FLAKES 500 GR / 12 BOX
+~#  Jc @7
+22
+~#  Jc @7
+XBX
+~#  Jc @7
+132
+~#  Jr |r20| @7
+13.5000
+~#  Jr |r20| @7
+
+~#  Jr @7
+297.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15176
+~# Jl @7
+50221200
+~#  Jl @7
+CORN FLAKES 198 GR / 16 BOX
+~#  Jc @7
+26
+~#  Jc @7
+XBX
+~#  Jc @7
+82.368
+~#  Jr |r20| @7
+9.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+234.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15204
+~# Jl @7
+50221200
+~#  Jl @7
+HOJUELA MAIZ AZUCARADA MICHEL CAJA 5 KG
+~#  Jc @7
+5
+~#  Jc @7
+XBX
+~#  Jc @7
+25
+~#  Jr |r20| @7
+9.5000
+~#  Jr |r20| @7
+
+~#  Jr @7
+47.50
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15205
+~# Jl @7
+50221200
+~#  Jl @7
+HOJUELA MAIZ AZUCARADA MICHEL CAJA 15 KG
+~#  Jc @7
+5
+~#  Jc @7
+XBX
+~#  Jc @7
+75
+~#  Jr |r20| @7
+28.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+140.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15223
+~# Jl @7
+50221200
+~#  Jl @7
+HOJUELA MAIZ AZUCARADA KINX CAJA 5 KG
+~#  Jc @7
+2
+~#  Jc @7
+XBX
+~#  Jc @7
+10
+~#  Jr |r20| @7
+11.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+22.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15279
+~# Jl @7
+50221200
+~#  Jl @7
+FREEZER FLAKES 198 GR / 16 BOX
+~#  Jc @7
+12
+~#  Jc @7
+XBX
+~#  Jc @7
+38.016
+~#  Jr |r20| @7
+9.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+108.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T15288
+~# Jl @7
+50221200
+~#  Jl @7
+FREEZER FLAKES MICHEL CJ  CON 12 DISP DE 730 G
+~#  Jc @7
+10
+~#  Jc @7
+XBX
+~#  Jc @7
+87.6
+~#  Jr |r20| @7
+17.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+170.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17103
+~# Jl @7
+50221200
+~#  Jl @7
+DONITAS SABOR FRUTAS PYCUUN MICHEL CAJA 10 KG
+~#  Jc @7
+2
+~#  Jc @7
+XBX
+~#  Jc @7
+20
+~#  Jr |r20| @7
+18.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+36.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17142
+~# Jl @7
+50221200
+~#  Jl @7
+DONITAS MULTIGRANO SABOR FRUTAS PYCUUN 4 KG
+~#  Jc @7
+5
+~#  Jc @7
+XBX
+~#  Jc @7
+20
+~#  Jr |r20| @7
+8.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+40.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17143
+~# Jl @7
+50221200
+~#  Jl @7
+DONITAS MULTIGRANO SABOR FRUTAS KINX CJ 4 KG
+~#  Jc @7
+5
+~#  Jc @7
+XBX
+~#  Jc @7
+20
+~#  Jr |r20| @7
+9.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+45.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17167
+~# Jl @7
+50221200
+~#  Jl @7
+PYCUUN FRUIT RINGS 198 GR / 16 BOX
+~#  Jc @7
+15
+~#  Jc @7
+XBX
+~#  Jc @7
+47.52
+~#  Jr |r20| @7
+9.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+135.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17172
+~# Jl @7
+50221200
+~#  Jl @7
+PYCUUN MICHEL CJ C/12  DISPLAYS DE 500 GR
+~#  Jc @7
+16
+~#  Jc @7
+XBX
+~#  Jc @7
+96
+~#  Jr |r20| @7
+9.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+144.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17276
+~# Jl @7
+50221200
+~#  Jl @7
+CHOCO KONG 198 GR /16 BOX
+~#  Jc @7
+6
+~#  Jc @7
+XBX
+~#  Jc @7
+19.008
+~#  Jr |r20| @7
+9.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+54.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17329
+~# Jl @7
+50221200
+~#  Jl @7
+ROCOCOA CHOCO BALLS 198 GR / 16 BOX
+~#  Jc @7
+6
+~#  Jc @7
+XBX
+~#  Jc @7
+19.008
+~#  Jr |r20| @7
+9.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+54.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T17709
+~# Jl @7
+50221200
+~#  Jl @7
+CEREAL ARROZ SAB NATURAL DELLYRROZ MICHEL CJ 13KG
+~#  Jc @7
+5
+~#  Jc @7
+XBX
+~#  Jc @7
+65
+~#  Jr |r20| @7
+22.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+110.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T75058
+~# Jl @7
+78101700
+~#  Jl @7
+FLETE MARITIMO 20 PIES
+~#  Jc @7
+1
+~#  Jc @7
+E48
+~#  Jc @7
+0
+~#  Jr |r20| @7
+2000.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+2000.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~#  Jc @7
+T75004
+~# Jl @7
+84131504
+~#  Jl @7
+SEGURO
+~#  Jc @7
+1
+~#  Jc @7
+E48
+~#  Jc @7
+0
+~#  Jr |r20| @7
+100.0000
+~#  Jr |r20| @7
+
+~#  Jr @7
+100.00
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~#  Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~#  Jc @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+~[  8 8 46 8 7 6 9 9 13
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~# Jl @7
+
+~]
+
+
+
+~[3 100
+~#
+~#
+~[100
+~#|1.0 f4.9|Jl @3
+
+~#|1.0 f4.9|Jl @3
+IMPUESTOS &gt;&gt; Cve:002 Factor:Tasa Tasa o Cuota:0.00 Base: $9,541.68 Impte: $0.00 &gt;&gt; Cve:003 Factor:Tasa Tasa o Cuota:0.00 Base: $7,441.68 Impte: $0.00
+~#
+~#|1.0 f4.9|Jl @3
+T.Operac:2  Cve:A1  Cert de Orig:1  Num.Cert.Orig:  Incoterm:CIF  TC:  19.4228  TotUSD:9541.68  Edo:ARUBA  País:ABW
+~#
+~#|1.0 f4.9|Jl @3
+CIF ORANJESTAD, ARUBA
+~#
+@6.
+~]
+
+
+~[100
+~#
+~[54 2 8 6 5 7 10 13
+~#|7.4 r0 gdg e+|Jc
+~[100
+~#|0 e+|@5 Jj
+RECIBIDA LA MERCANCIA EL CLIENTE CUENTA CON UN PLAZO MÁXIMO DE 10 DIAS PARA INCONFORMARSE POR ESCRITO DE LO CONTRARIO NO SE ACEPTA DEVOLUCIÓN.
+~]
+~#|7.4 l0 e+ r7.0|
+~#|7.4 l0 e+ r7.0|Jr @4
+~[100
+~#|0 r7.0 e+|@4 Jc
+TOTAL
+~#|0 r7.0 e+|@4 Jc
+GENERAL
+~]
+~#|7.4 e+ r7.0|Jr @4
+570.00
+~#|7.4 e+ r7.0|
+~#|7.4 e+ r7.0|Jr @4
+3207.39
+~#|7.4 e+ r7.0|
+~#|7.4 grg e+|Jr @4
+$ 9,541.68
+~]
+~]
+~&lt;Z10
+~&gt;
+~[100
+~#
+~[74 26
+~#
+~[100
+~#|7.4 glug e+ r 7.2|
+~[100
+~#|0 e+|@4 Jl
+CANTIDAD CON LETRA     @7 NUEVE MIL QUINIENTOS CUARENTA Y UN  DOLARES 68/100 U.S.
+~]
+~#|7.4 gdrg e+ u7.0 r7.2|
+~[100
+~#|0 e+|@7 Jc
+I M P O R T A N T E:
+~&lt;Z5
+~&gt;
+~#|0 e+|@5 Jj
+La siguiente información bancaria es la única que nuestra empresa reconoce para acreditar pagos: *Beneficiario:PABLO IGNACIO MICHEL ONTIVEROS  *Banco:INTERNATIONAL BANK *Número de cuenta:0755176 *ID Bank / Aba :114915272  *Dirección: 1801 S. 2nd St. McAllen, Texas 78503
+~]
+~]
+~#
+~[100
+~#|0 e+|
+~[48 52
+~#
+~[100
+~#|7.4 r7.0 f1.8 d7.0 e+ glg|M50.50 @9 Jc
+SUB TOTAL
+~#|7.4 r7.0 f1.8 d7.0 e+ glg|M50.50 @9 Jc
+DESCUENTO
+~#|7.4 udr7.0 f1.8 e+| Jc @9
+
+~#11.5
+~[60 30 10
+~#|7.4 udr7.0 f1.8 e+| Jc @9
+IVA
+~#|0 udr7.0 e+ f1.9| @4 Jc
+0%
+~#|0 e+ f1.8|
+~]
+~#|7.4 udr7.0 f1.8 e+| Jc @9
+
+~#|7.4 ru7.0 f1.8 e+ gdg|M75.65 @9 Jc
+TOTAL
+~]
+~#|7.4 gurg e+|
+~[100
+~#|0 e+|@4 Jr
+$ 9,541.68
+
+$ 
+
+
+
+
+
+~&lt;Z15
+~&gt;
+0.00
+
+
+
+
+
+~&lt;Z15
+~&gt;
+
+$ 9,541.68
+~]
+~]
+~]
+~]
+~]
+
+
+~[100
+~#|0 e+|Jl @6
+~[80 20
+~#
+~[5 95
+~#
+~[5
+~]
+~#
+~[95
+~#
+@1Sello Digital del CFDI:
+
+@3R5mncjDwVAL4tVWdpcV/BwZGXRHrZon4AkAzzIgnSDptAtfXK+phjqd4A3C3/Sas06aMvY5BAofhRPBB7eKF8ov6iy/Pp7iAL1ZSAU0olZ4nPddfnI1lAkhkaHbKnf9RGGUMtxJUepJVc5aToTZqIcAlasdLZk/+NnU3XJQCQP3xwQu+DpG36Dd4caE+2hqqWAzyxKUYjmXqMCrx4OJqg06D26jc2r+5lD9nwh5tyhL53sPFNxTrksjvanfdYsJEs3mFT14YbCIBZplQ1v17qoUNibxsaWhdteSi5wOZfvTnnUm4pIjuGk7QI+ggpWP6lr02ZsSwhbziDMywidrZfg==
+
+@1Sello del SAT:
+
+@3OscuvXhAh2WvO9ev5Zn7bWWfRtm6PEAdhFfO2BEaNUoAAEVBrIOKlPnFqyuYQ+49y9mdrgu74A4v2rRahro+m8jFXwj1Zr+009pF1+nipPa2LISKUQZ+Hm4/Rh5ntK4nJ4fSvi28eKwOsjDY3F341kh8JSHKf2RFHfUXiZ6gG7fd0CSixmvOr3WXJpNobOvOJZdS0dD5O42UxramSlGwWV3w383Mme4KHTif7PGhBpxquwKtDvmGHSTRRXF5AkAk1vc5g3LlSCUcMxr+vUC+Wmclm6VYHhHYacEaTZLJIBkC8gRSP5qr7Q+atahKf22ntnaZaI63+JGUF1uwUotncg==
+
+@1Cadena Original del Complemento de Certificación Digital del SAT:
+
+@3||1.1|77E01382-FFD0-4D39-BD24-51D090CBCC94|2019-11-19T17:49:46|FAC100625MC0|R5mncjDwVAL4tVWdpcV/BwZGXRHrZon4AkAzzIgnSDptAtfXK+phjqd4A3C3/Sas06aMvY5BAofhRPBB7eKF8ov6iy/Pp7iAL1ZSAU0olZ4nPddfnI1lAkhkaHbKnf9RGGUMtxJUepJVc5aToTZqIcAlasdLZk/+NnU3XJQCQP3xwQu+DpG36Dd4caE+2hqqWAzyxKUYjmXqMCrx4OJqg06D26jc2r+5lD9nwh5tyhL53sPFNxTrksjvanfdYsJEs3mFT14YbCIBZplQ1v17qoUNibxsaWhdteSi5wOZfvTnnUm4pIjuGk7QI+ggpWP6lr02ZsSwhbziDMywidrZfg==|00001000000406725461||
+
+@5No. de Certificado del CFDI:@300001000000403972145 @5|No. de Certificado del SAT:@300001000000406725461 @5|Fecha y Hora de Certificacion:@32019-11-19T17:49:46
+~]
+~]
+
+~#
+~[20
+~#D|e+|M450.450 "77E01382-FFD0-4D39-BD24-51D090CBCC94.bmp";
+~]
+~]
+~]
+
+
+
+
+~[100
+~#|0 e+|Jl @6
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~]
+
+
+~[100
+~#
+~[72 11 8 9
+~#|0 e+|@3 Jl
+DEBO Y PAGARE A LA ORDEN DE PABLO IGNACIO MICHEL ONTIVEROS, EN ESTA CIUDAD DE GUADALAJARA, JALISCO EL DIA  @5  24
+~#|0 e+|@3 Jl
+DE    @5 12
+~#|0 e+|@3 Jl
+DE   @5 2019
+~#|0 e+|@3 Jr
+LA CANTIDAD
+~]
+~#
+~[98 2
+~#|0 e+|@3 Jl
+DE $  @5  9,541.68   @3 (   @5 NUEVE MIL QUINIENTOS CUARENTA Y UN  DOLARES 68/100 U.S.
+~#|0 e+|@3 Jr
+)
+~]
+~#
+~[98 2
+~#|0 e+|@3 Jl
+VALOR DE MERCANCÍA RECIBIDA A MI ENTERA SATISFACCIÓN A PARTIR DE SU VENCIMIENTO ESTE PAGARÉ CAUSARÁ INTERES A RAZÓN DEL   @5 3 @3 %
+~]
+~#
+~[85 15
+~#
+~[100
+~#|0 e+|@3 Jl
+MENSUAL.
+
+~#
+~[7 20 20 53
+~#
+~#|0 e+|@3 Jl
+GUADALAJARA, JAL. A.   @5 19
+~#|0 e+|@3 Jl
+DE    @5 11
+~#|0 e+|@3 Jl
+DE @5  2019
+~]
+~]
+~#
+~[100
+~#|11.5 f1.8 gulg e+|Jc 
+@9 FACTURA
+~#|11.5 u0 gdrg e+|Jc
+@- FP144336
+~]
+~]
+~]
+
+
+~[100
+~#
+~[56 44
+~#
+~[100
+~#|0 e+|@7 Jl
+KONG HING SUPERMARKET NV
+
+SCHOTLANDSTRAAT # 33  ,    44220
+
+ORANJESTAD 
+
+ ARUBA ABW
+
+1383170
+
+(297)593.0533
+~]
+~#
+~[100
+~#
+~[50 50
+~#
+~[100
+~#|0 e+|@6 Jc
+_____________________________________
+~#|0 e+|@6 Jc
+ACEPTO
+~#|0 e+|@6 Jc
+NOMBRE Y FIRMA
+~]
+~#
+~]
+~&lt;Z45
+~&gt;
+
+~#
+~[1 99
+~#
+~#
+~[100
+~#|0 e+|@6 Jr
+RECIBIDA LA MERCANCÍA EL CLIENTE CUENTA CON UN PLAZO DE MÁXIMO DE 10 DÍAS PARA
+~#|0 e+|@6 Jr
+INCONFORMARSE POR ESCRITO DE LO CONTRARIO SE ACEPTA A SU ENTERA SATISFACCIÓN
+~]
+~]
+~]
+~]
+~]
+~]</fa:hfd>
+		</fa:Datos>
+	</cfdi:Addenda></cfdi:Comprobante>
