@@ -259,7 +259,7 @@ class Layout(Strings):
         c.drawString(110, altura+2, f"{self.txt_datostot_data['cantidadConLetra']}")
         c.drawString(215, altura-7, 'IMPORTANTE', charSpace=2)
         c.setFont('Times-New-Bold', 6.2)
-        _ = self.FitText(c, 22, altura-17,self.txt_datosfa_data['InfoCta'], 125,9)
+        _ = self.FitText(c, 22, altura-17,self.txt_datosfa_data['InfoCta'], 132,9)
         c.setFillColor(self.purple)
         c.roundRect(20,altura,410,10,1)
         
@@ -296,18 +296,17 @@ class Layout(Strings):
         qr.drawOn(c,473,altura-(37.5*mm)-5)
 
         #Sello Digital
-        #TODO PONER CADENAS
         c.setFillColor(black)
         c.setFont('Times-New-Bold', 7)
+        altura -=10
         c.drawString(43,altura,'Sello Digital del CFDI:')
-        c.setFont('Times-New', 5.7)
+        c.setFont('Times-New', 6)
         altura = self.FitText(c,43,altura-8,self.xml_data.atributos['Sello'],123)
-        #c.drawString(43,altura, self.xml_data.atributos['Sello'])
         c.setFont('Times-New-Bold', 7)
         altura-=2
         c.drawString(43,altura,'Sello del SAT:')
         altura-=9
-        c.setFont('Times-New', 5.7)
+        c.setFont('Times-New', 6)
         altura = self.FitText(c, 43, altura, self.xml_data.tfd.sello_digital_sat, 123)
         altura-=2
         c.setFont('Times-New-Bold', 7)
@@ -315,8 +314,16 @@ class Layout(Strings):
         altura-=9
 
         cadena_odecomplemento = f"||{self.xml_data.tfd.version}|{self.xml_data.tfd.uuid}|{self.xml_data.tfd.fecha_timbrado}|{self.xml_data.tfd.proveedor_certificado}|{self.xml_data.atributos['Sello']}|{self.xml_data.tfd.tfd_nodecert}||"
-        c.setFont('Times-New', 5.7)
+        c.setFont('Times-New', 6)
         altura = self.FitText(c, 43, altura, cadena_odecomplemento, 123)
+        c.drawString(118,altura-1, f"{self.txt_datoscom_data['noCertificado']}")
+        c.drawString(253,altura-1, f"{self.xml_data.tfd.tfd_nodecert}")
+        c.drawString(80,altura-7, f"{self.xml_data.tfd.fecha_timbrado}")
+        c.setFont('Times-New-Bold', 6)
+        c.drawString(43,altura-1, 'No. de Certificado del CFDI:')
+        c.drawString(180,altura-1, '|No. de Certificado del SAT:')
+        c.drawString(315,altura-1, '|Fecha y Hora de')
+        c.drawString(43,altura-7, 'Certificacion:')
         c.setFont('Times-New-Bold', 7)
 
         #Stroke
@@ -333,13 +340,22 @@ class Layout(Strings):
         altura -= 10
         c.setFont('Times-New', 6)
         c.drawString(20,altura, 'DEBO Y PAGARE A LA ORDEN DE PABLO IGNACIO MICHEL ONTIVEROS, EN ESTA CIUDAD DE GUADALAJARA, JALISCO EL DIA')
-        c.setFont('Times-New-Bold', 6)
-        c.drawString(385,altura, f"{self.txt_empresa_data['diaPag']}")
-        c.setFont('Times-New', 6)
+        c.drawString(537,altura, 'LA CANTIDAD')
+        c.drawString(410,altura, 'DE')
+        c.drawString(470,altura, 'DE')
         c.drawString(20,altura-7, 'DE $')
+        c.drawString(72,altura-7, '(')
+        c.drawString(577,altura-7, ')')
         c.drawString(20,altura-14, 'VALOR DE MERCANCÍA RECIBIDA A MI ENTERA SATISFACCIÓN A PARTIR DE SU VENCIMIENTO ESTE PAGARÉ CAUSARÁ INTERES A RAZÓN DEL')
+        c.drawString(445,altura-14, '%')
         c.drawString(20,altura-21, 'MENSUAL.')
         c.drawString(40,altura-28, 'GUADALAJARA, JAL. A.')
+        c.drawString(143,altura-28, 'DE')
+        c.drawString(237,altura-28, 'DE')
+        c.setFont('Times-New-Bold', 6)
+        c.drawString(386,altura, f"{self.txt_empresa_data['diaPag']}")
+        c.drawString(427,altura, f"{self.txt_empresa_data['mesPag']}")
+        c.drawString(485,altura, f"{self.txt_empresa_data['yearPag']}")
 
         altura-=48
         #Receptor, primer cuadro etiquetas no estáticas
