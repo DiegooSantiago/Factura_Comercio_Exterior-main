@@ -7,6 +7,7 @@ from xmlReader import XMLData
 from txtReader import TxtData
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.pdfbase import pdfmetrics
+import locale
 
 
 
@@ -20,6 +21,8 @@ class Strings(XMLData):
         self.txt_receptor_data = self.txt.GetReceptorData(txt_file)
         self.txt_empresa_data = self.txt.GetEmpresaData(txt_file)
         self.txt_datosfa_data = self.txt.GetDatosfaData(txt_file)
+        self.txt_datostot_data = self.txt.GetTotalesData(txt_file)
+        self.txt_datoscom_data = self.txt.GetComprobanteData(txt_file)
 
         fuente_path = "fonts/Courier.ttf"
         self.fuente_nombre = "Times-New"
@@ -55,21 +58,6 @@ class Layout(Strings):
         c.drawString(160, 657, 'CUENTA')
         c.drawString(235, 657, 'REFERENCIA')
 
-    """
-    TODO 
-        *** Preguntar si debo harcodear las leyendas ***
-                "Ingreso" después de tipo de comprobante
-                "Pago en parcialidades o diferido" Después de metodo de pago
-                "Personas físicas con actividades" Después de Regimen fiscal
-    """
-    """
-    TODO
-        ***
-        -Cambiar nombre del método porque no es estático
-        -Las variables están tomadas todas del txt, se deben tomar algunas del xml
-        -Para FECHA DE VENCIMIENTO estoy utilizando el atributo Fecha del cfdi y estoy cortando la cadena antes del T
-        -Falta agregar 0 dias en condiciones de pago, el string viene del txt
-    """
     def SetStaticLabels_(self, c):
 
         #Receptor, primer cuadro etiquetas no estáticas
@@ -91,7 +79,7 @@ class Layout(Strings):
         c.drawString(515, 740, self.txt_empresa_data['numGuia'])
         c.drawString(380, 727, self.txt_empresa_data['ordEnt'])
         c.drawString(525, 727, self.txt_empresa_data['ordSal'])
-        c.drawString(450, 714, 'falta agregar')
+        c.drawString(450, 714, self.xml_data.atributos['CondicionesDePago'])
         c.drawString(540, 714, self.txt_empresa_data['lisPrec'])
         c.drawString(390, 701, self.txt_empresa_data['nomAge1'])
         c.drawString(435, 688, self.txt_empresa_data['ordComp'])
@@ -101,7 +89,7 @@ class Layout(Strings):
         #Revisar cómo se comporta esa parte
         altura_bancos = 647
         for item in self.txt_empresa_data['extra03Banco'].split(' '):
-            c.drawString(12, altura_bancos, item)
+            c.drawString(15, altura_bancos, item)
             altura_bancos-=7
 
         c.drawString(70, 647, self.txt_empresa_data['extra03Clabe'])
@@ -113,7 +101,9 @@ class Layout(Strings):
         c.drawString(15, 600, f"MONEDA: {self.xml_data.atributos['Moneda']}")
         c.drawString(90, 600, f"TIPO DE CAMBIO: {self.xml_data.atributos['TipoCambio']}" )
         c.drawString(190,600, f"Exportación: {self.xml_data.atributos['Exportacion']}")
-        c.drawString(140, 590, f"FECHA DE VENCIMIENTO: {self.xml_data.atributos['Fecha'].split('T')[0]}")
+        c.drawString(140, 590, f"FECHA DE VENCIMIENTO: ")
+        c.setFont('Times-New-Bold', 7)
+        c.drawString(229, 590, f"{self.txt_empresa_data['yearPag']}-{self.txt_empresa_data['mesPag']}-{self.txt_empresa_data['diaPag']}")
 
     @abstractmethod
     def GetStaticHeaderText(self, c):
@@ -128,17 +118,16 @@ class Layout(Strings):
         c.setFont('Times-New-Bold', 7)
 
         # Header superior central
-        c.drawString(230, 827, f"Este documento es una representación impresa de un 'CFDI' version {self.xml_data.atributos['Version']}")
+        c.drawString(210, 827, f'Este documento es una representación impresa de un "CFDI" version {self.xml_data.atributos["Version"]}')
         c.setFont('Times-New-Bold', 5)
-        c.drawString(240, 820, f"METODO PAGO: {self.xml_data.atributos['MetodoPago']}")
-        c.drawString(340, 820, f"USO CFDI: {self.xml_data.receptor['UsoCFDI']}")
+        c.drawString(220, 820, f"METODO PAGO: {self.xml_data.atributos['MetodoPago']}, {self.txt_datosfa_data['FormaPagoPDF']} USO CFDI: {self.xml_data.receptor['UsoCFDI']}: {self.txt_datosfa_data['UsoCfdi']}")
         c.setFont('Times-New-Bold', 6)
-        c.drawString(200, 807, f"REGIMEN FISCAL: {self.xml_data.emisor['RegimenFiscal']}" )
+        c.drawString(200, 807, f"REGIMEN FISCAL: {self.xml_data.emisor['RegimenFiscal']}. {self.txt_emisor_data['regimenFiscalPDF']}.")
         c.setFont('Times-New-Bold', 7)
-        c.drawString(270, 795, f"TIPO DE COMPROBANTE: {self.xml_data.atributos['TipoDeComprobante']}")
+        c.drawString(270, 795, f"TIPO DE COMPROBANTE: {self.xml_data.atributos['TipoDeComprobante']} {self.txt_datosfa_data['TipoComprobante']}")
         c.drawString(220, 785, 'FECHA DE EMISION:')
         c.setFont('Times-New', 6.5)
-        c.drawString(223, 775, f"{self.xml_data.atributos['Fecha']}")
+        c.drawString(223, 775, f"{self.xml_data.atributos['Fecha'].replace('T', ' ')}")
         c.setFont('Times-New-Bold', 7)
         c.drawString(330, 785, 'LUGAR DE EXPEDICION:')
         c.setFont('Times-New', 7)
@@ -146,13 +135,13 @@ class Layout(Strings):
     
     @abstractmethod
     def GetFolios(self, c):
-        c.setFillColor(pink)
+        c.setFillColor(self.purple)
         c.roundRect(500, 805, 80, 30, 4, fill=True)
         c.setFillColor(white)
         c.roundRect(500, 805, 80, 15, 4, fill=True)
-        c.setFillColor(black)
+        c.setFillColor(white)
         c.setFont('Times-New', 7)
-        c.drawString(514, 828, 'FOLIO INTERNO')
+        c.drawString(514, 825, 'FOLIO INTERNO')
         c.setFont('Times-New', 10)
         c.setFillColor(black)
         c.drawString(521, 810, f"{self.xml_data.atributos['Serie']}{self.xml_data.atributos['Folio']}")
@@ -161,7 +150,7 @@ class Layout(Strings):
         c.roundRect(500, 765, 80, 30, 4, fill=True)
         c.setFillColor(white)
         c.setFont('Times-New', 7)
-        c.drawString(516, 787, 'FOLIO FISCAL')
+        c.drawString(516, 785, 'FOLIO FISCAL')
         c.setFillColor(white)
         c.setFont('Times-New', 5)
         c.roundRect(500, 765, 80, 15, 4, fill=True)
@@ -253,11 +242,21 @@ class Layout(Strings):
         c.setFont('Times-New', 7)
         c.drawString(337, altura+14, 'TOTAL')
         c.drawString(332, altura+6, 'GENERAL')
+        c.drawRightString(407, altura+14, f"{self.txt_empresa_data['sumaBultos']}")
+        c.drawRightString(482, altura+14, f"{self.txt_empresa_data['sumaKilos']}")
+        locale.setlocale(locale.LC_MONETARY, 'en_US.UTF-8')
+        c.drawRightString(577, altura+14, f"{locale.currency(float(self.txt_datostot_data['subtotalSinDescuentosSinIva']), grouping=True)}")
+        c.drawRightString(577, altura-8, f"{locale.currency(float(self.txt_datostot_data['subTotal']), grouping=True)}")
+        if self.txt_datoscom_data['descuento'] != '':
+            c.drawRightString(577, altura-20, f"{locale.currency(float(self.txt_datoscom_data['descuento']), grouping=True)}")
+        else:
+            c.drawRightString(577, altura-20, '$')
         altura -= 10
 
         #Subtotal Rects
         c.drawString(22, altura+2, 'CANTIDAD CON LETRA')
         c.setFont('Times-New-Bold', 7)
+        c.drawString(110, altura+2, f"{self.txt_datostot_data['cantidadConLetra']}")
         c.drawString(215, altura-7, 'IMPORTANTE', charSpace=2)
         c.setFont('Times-New-Bold', 6.2)
         _ = self.FitText(c, 22, altura-17,self.txt_datosfa_data['InfoCta'], 125,9)
@@ -268,21 +267,31 @@ class Layout(Strings):
         c.roundRect(20,altura-30,410,45,1)
         c.roundRect(430,altura+15,70,10,1,fill=True)
         c.setFillColor(white)
+        c.setFont('Times-New', 6.2)
         c.drawString(450, altura+18, 'SUB TOTAL')
         c.setFillColor(self.purple)
         c.roundRect(430,altura-40,70,55,1,fill=True)
         c.setFillColor(white)
         c.drawString(446, altura+5, 'DESCUENTO')
         c.drawString(446, altura-10, 'IVA')
+        c.drawString(456, altura-25, 'TOTAL')
         #cuadro blanco de iva
         c.roundRect(470,altura-13,20,10,0,fill=True, stroke=False)
-        c.drawString(456, altura-25, 'TOTAL')
+        cadena = self.txt_datosfa_data['ResumenTax']
+        inicio = cadena.find("002 Factor:Tasa Tasa o Cuota:0.")
+        fin = cadena.find("Base:", inicio)
+        inicio += 31
+        c.setFont('Times-New', 7)
+        c.setFillColor(black)
+        c.drawString(473, altura-10, f"{cadena[inicio:fin].strip()}%")
+        c.drawRightString(577, altura-10, f"{self.txt_datostot_data['IVA']}")
+        c.drawRightString(577, altura-25, f"{locale.currency(float(self.txt_datostot_data['total']), grouping=True)}")
         altura -=40
         c.roundRect(500,altura,80,65,1,fill=False)
 
         #QR
         base_url = 'https://verificacfdi.facturaelectronica.sat.gob.mx/default.aspx'
-        qrcode_url = f"{base_url}'?&id='{self.xml_data.tfd.uuid}'&re='{self.xml_data.emisor['Rfc']}'&rr='{self.xml_data.receptor['Rfc']}'&tt='{self.xml_data.atributos['Total']}'&fe='{self.xml_data.atributos['Sello'][-8:]}"
+        qrcode_url = f"{base_url}?&id={self.xml_data.tfd.uuid}&re={self.xml_data.emisor['Rfc']}&rr={self.xml_data.receptor['Rfc']}&tt={self.xml_data.atributos['Total']}&fe={self.xml_data.atributos['Sello'][-8:]}"
         qr = QRCodeImage(qrcode_url, size=37.5*mm, border=False)
         qr.drawOn(c,473,altura-(37.5*mm)-5)
 
@@ -323,21 +332,21 @@ class Layout(Strings):
 
         altura -= 10
         c.setFont('Times-New', 6)
-        pagare_text = "DEBO Y PAGARE A LA ORDEN DE PABLO IGNACIO MICHEL ONTIVEROS, EN ESTA CIUDAD DE GUADALAJARA, JALISCO EL DIA 'xxx' LA CANTIDAD DE 'xxx' VALOR DE MERCANCÍA RECIBIDA A MI ENTERA SATISFACCIÓN A PARTIR DE SU VENCIMIENTO ESTE PAGARÉ CAUSARÁ INTERES A RAZÓN DEL 'xxx' MENSUAL. "
-        chars = 123
-        lines = [pagare_text[i:i + chars] for i in range(0, len(pagare_text), chars)]
+        c.drawString(20,altura, 'DEBO Y PAGARE A LA ORDEN DE PABLO IGNACIO MICHEL ONTIVEROS, EN ESTA CIUDAD DE GUADALAJARA, JALISCO EL DIA')
+        c.setFont('Times-New-Bold', 6)
+        c.drawString(385,altura, f"{self.txt_empresa_data['diaPag']}")
+        c.setFont('Times-New', 6)
+        c.drawString(20,altura-7, 'DE $')
+        c.drawString(20,altura-14, 'VALOR DE MERCANCÍA RECIBIDA A MI ENTERA SATISFACCIÓN A PARTIR DE SU VENCIMIENTO ESTE PAGARÉ CAUSARÁ INTERES A RAZÓN DEL')
+        c.drawString(20,altura-21, 'MENSUAL.')
+        c.drawString(40,altura-28, 'GUADALAJARA, JAL. A.')
 
-        for line in lines:
-            c.drawString(20,altura, line)
-            altura -= 7
-        c.drawString(40,altura, 'GUADALAJARA, JAL. A.')
-
-        altura-=20
+        altura-=48
         #Receptor, primer cuadro etiquetas no estáticas
         c.setFont('Times-New-Bold', 6)
         c.drawString(20, altura, f"{self.xml_data.receptor['Nombre']}")
         altura -= 8
-        c.drawString(20, altura, f"{self.txt_receptor_data['calle']}")
+        c.drawString(20, altura, f"{self.txt_receptor_data['calle']} ,")
         altura -= 8
         c.drawString(20, altura, f"{self.txt_receptor_data['localidad']}")
         altura -= 8
@@ -350,11 +359,11 @@ class Layout(Strings):
         altura += 32
 
         #Cuadro de factura
-        c.setFillColor(pink)
+        c.setFillColor(self.purple)
         c.roundRect(500, altura, 80, 30, 4, fill=True)
         c.setFillColor(white)
         c.roundRect(500, altura, 80, 15, 4, fill=True)
-        c.setFillColor(black)
+        c.setFillColor(white)
         c.setFont('Times-New', 8)
         c.drawString(521, altura+20, 'FACTURA')
         c.setFont('Times-New', 10)

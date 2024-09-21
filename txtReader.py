@@ -5,6 +5,8 @@ class TxtData:
         self.receptor_data : dict = {}
         self.empresa_data : dict = {}
         self.datosfa_data : dict = {}
+        self.datostot_data : dict = {}
+        self.datoscom_data : dict = {}
 
     def GetEmisorData(self, filename) -> dict:
         with open(filename, 'r', encoding='latin-1') as file:
@@ -56,3 +58,24 @@ class TxtData:
                         self.datosfa_data[variable_name] = variable_datosfa_value
         return self.datosfa_data
 
+    def GetTotalesData(self, filename) -> dict:
+        with open(filename, 'r', encoding='latin-1') as file:
+            for line in file:
+                if line.startswith('tot:'):
+                    parts = line.strip().split('=')
+                    if len(parts) == 2:
+                        variable_name = parts[0][4:]
+                        variable_datostot_value = parts[1]
+                        self.datostot_data[variable_name] = variable_datostot_value
+        return self.datostot_data
+
+    def GetComprobanteData(self, filename) -> dict:
+        with open(filename, 'r', encoding='latin-1') as file:
+            for line in file:
+                if line.startswith('com:'):
+                    parts = line.strip().split('=')
+                    if len(parts) == 2:
+                        variable_name = parts[0][4:]
+                        variable_datoscom_value = parts[1]
+                        self.datoscom_data[variable_name] = variable_datoscom_value
+        return self.datoscom_data
