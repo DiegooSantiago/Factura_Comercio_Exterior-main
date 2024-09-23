@@ -12,7 +12,7 @@ class XmlPdf:
         self.body = Body(xml_obj)
         
     def main(self, filenamexml, filenametxt):
-        c = canvas.Canvas("test.pdf")
+        c = canvas.Canvas("test_FP204233.pdf")
         self.body.GetLayout(filenamexml, c, filenametxt)
         c.save()
 
