@@ -64,10 +64,13 @@ class Layout(Strings):
         #Receptor, primer cuadro etiquetas no estáticas
         c.setFont('Times-New', 7.5)
         c.drawString(12, 752, f"{self.xml_data.receptor['Nombre']}, Domicilio Fiscal: {self.xml_data.receptor['DomicilioFiscalReceptor']}, Regimen Fiscal: {self.xml_data.receptor['RegimenFiscalReceptor']}")
-        c.drawString(12, 741, f"{self.txt_receptor_data['calle']}")
-        c.drawString(12, 730, f"{self.txt_receptor_data['codigoPostal']}")
+        c.drawString(12, 741, f"{self.txt_receptor_data['calle']} {self.txt_receptor_data['noExterior']}")
+        if self.txt_receptor_data['codigoPostal'] == 'NA':
+            c.drawString(12, 730, f"{self.txt_receptor_data['codigoPostal']}")
+        else:
+            c.drawString(12, 730, f"{self.txt_receptor_data['colonia']} C.P.{self.txt_receptor_data['codigoPostal']}")
         c.drawString(12, 718, f"{self.txt_receptor_data['localidad']}")
-        c.drawString(12, 707, f"{self.txt_receptor_data['estado']}. {self.txt_receptor_data['pais']}")
+        c.drawString(12, 707, f"{self.txt_receptor_data['municipio']} {self.txt_receptor_data['estado']}, {self.txt_receptor_data['pais']}")
         c.drawString(12, 696, f"{self.txt_receptor_data['idFiscal']}")
         c.drawString(12, 685, f"{self.txt_receptor_data['telefono']}")
 
@@ -89,13 +92,26 @@ class Layout(Strings):
         #DATOS BANCOS DEL VIENEN DEL TXT
         #Revisar cómo se comporta esa parte
         altura_bancos = 647
-        for item in self.txt_empresa_data['extra03Banco'].split(' '):
-            c.drawString(15, altura_bancos, item)
-            altura_bancos-=7
-
-        c.drawString(70, 647, self.txt_empresa_data['extra03Clabe'])
-        c.drawString(160, 647, self.txt_empresa_data['extra03Cuenta'])
-        c.drawString(235, 647, self.txt_empresa_data['extra03Ref'])
+        c.drawString(15, altura_bancos, f"{self.txt_empresa_data['extra03Banco']}")
+        c.drawString(70, altura_bancos, self.txt_empresa_data['extra03Clabe'])
+        c.drawString(160, altura_bancos, self.txt_empresa_data['extra03Cuenta'])
+        c.drawString(235, altura_bancos, self.txt_empresa_data['extra03Ref'])
+        c.drawString(15, altura_bancos-7, f"{self.txt_empresa_data['extra04Banco']}")
+        c.drawString(70, altura_bancos-7, self.txt_empresa_data['extra04Clabe'])
+        c.drawString(160, altura_bancos-7, self.txt_empresa_data['extra04Cuenta'])
+        c.drawString(235, altura_bancos-7, self.txt_empresa_data['extra04Ref'])
+        c.drawString(15, altura_bancos-14, f"{self.txt_empresa_data['extra05Banco']}")
+        c.drawString(70, altura_bancos-14, self.txt_empresa_data['extra05Clabe'])
+        c.drawString(160, altura_bancos-14, self.txt_empresa_data['extra05Cuenta'])
+        c.drawString(235, altura_bancos-14, self.txt_empresa_data['extra05Ref'])
+        c.drawString(15, altura_bancos-21, f"{self.txt_empresa_data['extra06Banco']}")
+        c.drawString(70, altura_bancos-21, self.txt_empresa_data['extra06Clabe'])
+        c.drawString(160, altura_bancos-21, self.txt_empresa_data['extra06Cuenta'])
+        c.drawString(235, altura_bancos-21, self.txt_empresa_data['extra06Ref'])
+        c.drawString(15, altura_bancos-28, f"{self.txt_empresa_data['extra07Banco']}")
+        c.drawString(70, altura_bancos-28, self.txt_empresa_data['extra07Clabe'])
+        c.drawString(160, altura_bancos-28, self.txt_empresa_data['extra07Cuenta'])
+        c.drawString(235, altura_bancos-28, self.txt_empresa_data['extra07Ref'])
 
         #Bancos etiquetas no estáticas
         c.drawString(30, 610, f"FORMA DE PAGO: {self.xml_data.atributos['FormaPago']}")
@@ -111,7 +127,7 @@ class Layout(Strings):
         c.setFont('Times-New-Bold', 7.5)
         c.drawString(30, 830, self.xml_data.emisor['Nombre'])
         c.setFont('Times-New-Bold', 7)
-        c.drawString(30, 820, f"{self.txt_emisor_data['calle']} No. {self.txt_emisor_data['noExterior']} C.P {self.txt_emisor_data['codigoPostal']}")
+        c.drawString(30, 820, f"{self.txt_emisor_data['calle']} No. {self.txt_emisor_data['noExterior']} C.P. {self.txt_emisor_data['codigoPostal']}")
         c.drawString(65, 810, f"Col. {self.txt_emisor_data['PDFcolonia']}")
         c.drawString(20, 800, f"{self.txt_emisor_data['telefono']}")
         c.drawString(40, 790, f"{self.txt_emisor_data['PDFmunicipio']}, {self.txt_emisor_data['PDFestado']}, {self.txt_emisor_data['PDFpais']}")
@@ -264,6 +280,8 @@ class Layout(Strings):
             _ = self.FitText(c, 22, altura-28,self.txt_datosfa_data['InfoCta'][98:168], 100,9)
             c.setFont('Times-New-Bold', 8.8)
             _ = self.FitText(c, 22, altura-38,self.txt_datosfa_data['InfoCta'][169:], 110,9)
+        elif self.txt_datosfa_data['InfoCta'][0:2] == 'PA':
+            _ = self.FitText(c, 22, altura-18,self.txt_datosfa_data['InfoCta'][0:], 70,9)
         c.setFillColor(self.purple)
         c.roundRect(20,altura,410,10,1)
         
@@ -271,25 +289,33 @@ class Layout(Strings):
         c.roundRect(20,altura-30,410,45,1)
         c.roundRect(430,altura+15,70,10,1,fill=True)
         c.setFillColor(white)
-        c.setFont('Times-New', 6.2)
+        c.setFont('Times-New', 7)
         c.drawString(450, altura+18, 'SUB TOTAL')
         c.setFillColor(self.purple)
         c.roundRect(430,altura-40,70,55,1,fill=True)
         c.setFillColor(white)
         c.drawString(446, altura+5, 'DESCUENTO')
+        if self.txt_datostot_data['IEPS'] != '0.00':
+            altura -=10
+            c.drawString(455, altura+3, 'IEPS 8%')
+            c.setFillColor(black)
+            c.drawRightString(577, altura+3, f"{self.txt_datostot_data['txtIEPS']}")
+            c.setFillColor(white)
         c.drawString(446, altura-10, 'IVA')
         c.drawString(456, altura-25, 'TOTAL')
         #cuadro blanco de iva
         c.roundRect(470,altura-13,20,10,0,fill=True, stroke=False)
+        #Porcentaje de impuesto
         cadena = self.txt_datosfa_data['ResumenTax']
         inicio = cadena.find("002 Factor:Tasa Tasa o Cuota:0.")
         fin = cadena.find("Base:", inicio)
         inicio += 31
-        c.setFont('Times-New', 7)
         c.setFillColor(black)
         c.drawString(473, altura-10, f"{cadena[inicio:fin].strip()}%")
         c.drawRightString(577, altura-10, f"{self.txt_datostot_data['IVA']}")
         c.drawRightString(577, altura-25, f"{locale.currency(float(self.txt_datostot_data['total']), grouping=True)}")
+        if self.txt_datostot_data['IEPS'] != '0.00':
+            altura +=10
         altura -=40
         c.roundRect(500,altura,80,65,1,fill=False)
 
@@ -371,7 +397,7 @@ class Layout(Strings):
         c.setFont('Times-New-Bold', 7)
         c.drawString(20, altura, f"{self.xml_data.receptor['Nombre']}")
         altura -= 8
-        c.drawString(20, altura, f"{self.txt_receptor_data['calle']} ,")
+        c.drawString(20, altura, f"{self.txt_receptor_data['calle']} , {self.txt_receptor_data['colonia']} {self.txt_receptor_data['CPLabel']}")
         altura -= 8
         c.drawString(20, altura, f"{self.txt_receptor_data['localidad']}")
         altura -= 8
