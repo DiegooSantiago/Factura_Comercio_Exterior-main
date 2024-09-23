@@ -39,7 +39,7 @@ class TimbreFiscalDigital():
 class XMLData(Comprobante):
 
     def __init__(self):
-        self.purple = '#2b2fab'
+        self.purple = '#3333cc'
 
     def GetData(self, xml_obj):
         tree = ET.parse(xml_obj)

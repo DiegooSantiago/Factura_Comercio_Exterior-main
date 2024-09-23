@@ -7,6 +7,7 @@ class TxtData:
         self.datosfa_data : dict = {}
         self.datostot_data : dict = {}
         self.datoscom_data : dict = {}
+        self.detalle_data : list = []
 
     def GetEmisorData(self, filename) -> dict:
         with open(filename, 'r', encoding='latin-1') as file:
@@ -79,3 +80,21 @@ class TxtData:
                         variable_datoscom_value = parts[1]
                         self.datoscom_data[variable_name] = variable_datoscom_value
         return self.datoscom_data
+
+    def GetDetalleData(self, filename):
+        with open(filename, 'r', encoding='latin-1') as file:
+            contenido = file.read()
+            inicio = contenido.find("#InicioDetalle") + len("#InicioDetalle")
+            fin = contenido.find("#FinDetalle")
+            detalle = contenido[inicio:fin].strip()
+            lineas = detalle.splitlines()
+            columnas = lineas[0].strip().split('|')
+            for linea in lineas[1:]:
+                valores = linea.split('|')
+                if len(valores)-2 == len(columnas)-1:
+                    diccionario_det = {}
+                    for i in range(len(columnas)):
+                        if columnas[i] != '':
+                            diccionario_det[columnas[i]] = valores[i]
+                    self.detalle_data.append(diccionario_det)
+        return self.detalle_data

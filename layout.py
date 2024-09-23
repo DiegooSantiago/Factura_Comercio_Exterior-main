@@ -23,6 +23,7 @@ class Strings(XMLData):
         self.txt_datosfa_data = self.txt.GetDatosfaData(txt_file)
         self.txt_datostot_data = self.txt.GetTotalesData(txt_file)
         self.txt_datoscom_data = self.txt.GetComprobanteData(txt_file)
+        self.txt_detalle_data =  self.txt.GetDetalleData(txt_file)
 
         fuente_path = "fonts/Courier.ttf"
         self.fuente_nombre = "Times-New"
@@ -48,7 +49,7 @@ class Layout(Strings):
         c.drawString(467, 727, 'No. De SALIDA ')
         c.drawString(361, 714, 'CONDICIONES DE PAGO ')
         c.drawString(516, 714, 'LISTA  ')
-        c.drawString(361, 701, 'AGTE ')
+        c.drawString(361, 701, 'AGTE:')
         c.drawString(361, 688, 'ORDEN DE COMPRA ')
         c.drawString(361, 673, 'cfdis Relacionados')
 
@@ -99,8 +100,8 @@ class Layout(Strings):
         #Bancos etiquetas no estáticas
         c.drawString(30, 610, f"FORMA DE PAGO: {self.xml_data.atributos['FormaPago']}")
         c.drawString(15, 600, f"MONEDA: {self.xml_data.atributos['Moneda']}")
-        c.drawString(90, 600, f"TIPO DE CAMBIO: {self.xml_data.atributos['TipoCambio']}" )
-        c.drawString(190,600, f"Exportación: {self.xml_data.atributos['Exportacion']}")
+        c.drawString(90, 600, f"TIPO CAMBIO: {self.xml_data.atributos['TipoCambio']}" )
+        c.drawString(166,600, f"Exportación: {self.xml_data.atributos['Exportacion']}")
         c.drawString(140, 590, f"FECHA DE VENCIMIENTO: ")
         c.setFont('Times-New-Bold', 7)
         c.drawString(229, 590, f"{self.txt_empresa_data['yearPag']}-{self.txt_empresa_data['mesPag']}-{self.txt_empresa_data['diaPag']}")
@@ -120,9 +121,9 @@ class Layout(Strings):
         # Header superior central
         c.drawString(210, 827, f'Este documento es una representación impresa de un "CFDI" version {self.xml_data.atributos["Version"]}')
         c.setFont('Times-New-Bold', 5)
-        c.drawString(220, 820, f"METODO PAGO: {self.xml_data.atributos['MetodoPago']}, {self.txt_datosfa_data['FormaPagoPDF']} USO CFDI: {self.xml_data.receptor['UsoCFDI']}: {self.txt_datosfa_data['UsoCfdi']}")
+        c.drawString(220, 815, f"METODO PAGO: {self.xml_data.atributos['MetodoPago']}, {self.txt_datosfa_data['FormaPagoPDF']} USO CFDI: {self.xml_data.receptor['UsoCFDI']}: {self.txt_datosfa_data['UsoCfdi']}")
         c.setFont('Times-New-Bold', 6)
-        c.drawString(200, 807, f"REGIMEN FISCAL: {self.xml_data.emisor['RegimenFiscal']}. {self.txt_emisor_data['regimenFiscalPDF']}.")
+        c.drawString(200, 809, f"REGIMEN FISCAL: {self.xml_data.emisor['RegimenFiscal']}. {self.txt_emisor_data['regimenFiscalPDF']}.")
         c.setFont('Times-New-Bold', 7)
         c.drawString(270, 795, f"TIPO DE COMPROBANTE: {self.xml_data.atributos['TipoDeComprobante']} {self.txt_datosfa_data['TipoComprobante']}")
         c.drawString(220, 785, 'FECHA DE EMISION:')
@@ -192,23 +193,23 @@ class Layout(Strings):
         c.line(45, 585, 45, 560)
         c.drawString(53, 575, 'COD SAT')
         c.line(90, 585, 90, 560)
-        c.drawString(165, 575, 'DESCRIPCION')
+        c.drawString(175, 575, 'DESCRIPCION')
         c.line(305, 585, 305, 560)
         c.drawString(313, 575, 'OBJ.')
         c.drawString(310, 565, 'IMPTO')
         c.line(335, 585, 335, 560)
         c.drawString(340, 575, 'BULTOS')
         c.line(370, 585, 370, 560)
-        c.drawString(375, 575, 'U.M. SAT')
+        c.drawString(378, 575, 'U.M. SAT')
         c.line(410, 585, 410, 560)
-        c.drawString(415, 575, 'KGS')
+        c.drawString(420, 575, 'KGS')
         c.line(440, 585, 440, 560)
-        c.drawString(450, 575, 'VALOR')
-        c.drawString(445, 565, 'UNITARIO')
+        c.drawString(453, 575, 'VALOR')
+        c.drawString(448, 565, 'UNITARIO')
         c.line(485, 585, 485, 560)
         c.drawString(490, 575, 'DESCUENTO')
         c.line(530, 585, 530, 560)
-        c.drawString(535, 575, 'IMPORTE')
+        c.drawString(542, 575, 'IMPORTE')
 
     def FitText(self, c, x, y, texto, max_chars, factor=None) -> int:
         lines = [texto[i:i + max_chars] for i in range(0, len(texto), max_chars)]
@@ -221,9 +222,8 @@ class Layout(Strings):
         return y
 
     def Footer(self, c, altura):
-        #TODO Revisa
 
-        c.setFillColor(lightgrey)
+        c.setFillColor(HexColor('#e8e8e8'))
         
         #Cuadro bajo el gris con líneas verticales
         #altura + 25 para compensar el recorrido hacia arriba
@@ -258,8 +258,12 @@ class Layout(Strings):
         c.setFont('Times-New-Bold', 7)
         c.drawString(110, altura+2, f"{self.txt_datostot_data['cantidadConLetra']}")
         c.drawString(215, altura-7, 'IMPORTANTE', charSpace=2)
-        c.setFont('Times-New-Bold', 6.2)
-        _ = self.FitText(c, 22, altura-17,self.txt_datosfa_data['InfoCta'], 132,9)
+        c.setFont('Times-New-Bold', 9)
+        if self.txt_datosfa_data['InfoCta'][0:2] == 'La':
+            _ = self.FitText(c, 22, altura-18,self.txt_datosfa_data['InfoCta'][0:97], 97,9)
+            _ = self.FitText(c, 22, altura-28,self.txt_datosfa_data['InfoCta'][98:168], 100,9)
+            c.setFont('Times-New-Bold', 8.8)
+            _ = self.FitText(c, 22, altura-38,self.txt_datosfa_data['InfoCta'][169:], 110,9)
         c.setFillColor(self.purple)
         c.roundRect(20,altura,410,10,1)
         
@@ -327,7 +331,6 @@ class Layout(Strings):
         c.setFont('Times-New-Bold', 7)
 
         #Stroke
-        ##TODO Revisar si no es necesario descontar el QR de la altura, ya que es controlada por la función FItText
         #altura = altura-(37.5*mm)-5
         altura -=20
         c.setStrokeColor(grey)
@@ -356,17 +359,23 @@ class Layout(Strings):
         c.drawString(386,altura, f"{self.txt_empresa_data['diaPag']}")
         c.drawString(427,altura, f"{self.txt_empresa_data['mesPag']}")
         c.drawString(485,altura, f"{self.txt_empresa_data['yearPag']}")
+        c.drawCentredString(52,altura-7, f"{locale.currency(float(self.txt_datostot_data['total']), symbol=False, grouping=True)}")
+        c.drawString(80,altura-7, f"{self.txt_datostot_data['cantidadConLetra']}")
+        c.drawRightString(440,altura-14, f"{self.txt_empresa_data['interesPag']}")
+        c.drawString(115,altura-28, f"{self.txt_empresa_data['diaFac']}")
+        c.drawString(160,altura-28, f"{self.txt_empresa_data['mesFac']}")
+        c.drawString(249,altura-28, f"{self.txt_empresa_data['yearFac']}")
 
         altura-=48
         #Receptor, primer cuadro etiquetas no estáticas
-        c.setFont('Times-New-Bold', 6)
+        c.setFont('Times-New-Bold', 7)
         c.drawString(20, altura, f"{self.xml_data.receptor['Nombre']}")
         altura -= 8
         c.drawString(20, altura, f"{self.txt_receptor_data['calle']} ,")
         altura -= 8
         c.drawString(20, altura, f"{self.txt_receptor_data['localidad']}")
         altura -= 8
-        c.drawString(20, altura, f"{self.txt_receptor_data['estado']}. {self.txt_receptor_data['pais']}")
+        c.drawString(20, altura, f"{self.txt_receptor_data['estado']}, {self.txt_receptor_data['pais']}")
         altura -= 8
         c.drawString(20, altura, f"{self.txt_receptor_data['idFiscal']}")
         altura -= 8
@@ -402,22 +411,32 @@ class Layout(Strings):
 
     def UnaPagina(self, c):
         altura = 553
+        c.setFont('Times-New-Bold', 6)
         for idx, concepto in enumerate(self.xml_data.conceptos):
             c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
             c.drawString(53, altura, concepto.atributos['ClaveProdServ'])
             c.drawString(90, altura, concepto.atributos['Descripcion'])
             c.drawString(315, altura, concepto.atributos['ObjetoImp'])
-            c.drawString(348, altura, concepto.atributos['Cantidad'])
+            c.drawCentredString(352, altura, concepto.atributos['Cantidad'])
             c.drawString(385, altura, concepto.atributos['ClaveUnidad'])
-            c.drawString(418, altura, 'KGS')
-            c.drawString(452, altura, concepto.atributos['ValorUnitario'])
-            c.drawString(542, altura, concepto.atributos['Importe'])
-            altura-=9
+            for art in self.txt_detalle_data:
+                if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
+                    c.drawCentredString(426, altura, str(art['Kgs']))
+                    break
+            c.drawString(459, altura, concepto.atributos['ValorUnitario'])
+            #Descuento
+            c.drawRightString(580, altura, concepto.atributos['Importe'])
+            altura -= 9
 
+        # Añadir el número de página
+        c.setFont('Times-New', 5.5)
+        c.drawRightString(474, 830, f"Pag {self.pagina_actual}/{self.total_paginas}")
+
+        c.setFont('Times-New', 6)
         altura -= 15
-        #Cuadro gris
+        # Cuadro gris
         c.setFillColor(lightgrey)
-        c.rect(20,altura,560,20,fill=True,stroke=0)
+        c.rect(20, altura, 560, 20, fill=True, stroke=0)
         c.setFillColor(black)
         c.drawString(25, altura+15, self.txt_datosfa_data['ResumenTax'])
         c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
@@ -427,71 +446,81 @@ class Layout(Strings):
 
     def MasPags(self, c):
         altura = 553
+        conceptos_por_pagina = (altura - 346) // 9
+        
         for idx, concepto in enumerate(self.xml_data.conceptos):
-            if altura - 9 < 346:
-
+            if idx != 0 and idx % conceptos_por_pagina == 0:
+                # Página completa, pasa a la siguiente página
                 altura -= 15
-                #Cuadro gris
                 c.setFillColor(lightgrey)
-                c.rect(20,altura,560,20,fill=True,stroke=0)
-
+                c.rect(20, altura, 560, 20, fill=True, stroke=0)
                 c.setFillColor(black)
                 c.drawString(25, altura+15, self.txt_datosfa_data['ResumenTax'])
                 c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
                 c.drawString(25, altura+2, self.txt_empresa_data['obs02'])
-                c.showPage()
+
+                # Añadir número de página
+                c.setFont('Times-New', 5.5)
+                c.drawRightString(474, 830, f"Pag {self.pagina_actual}/{self.total_paginas}")
+                
+                c.setFont('Times-New', 6)
+                c.showPage()  # Nueva página
+                self.pagina_actual += 1
                 self.GetStaticHeaderText(c)
                 self.GetFolios(c)
                 self.GetRectangles(c)
                 self.GetDetalleHeader(c)
                 altura = 553
 
-
-            c.setFont('Times-New', 6)
-            c.setFillColor(black)
+            # Imprimir el concepto actual
+            c.setFont('Times-New-Bold', 6)
             c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
             c.drawString(53, altura, concepto.atributos['ClaveProdServ'])
             c.drawString(90, altura, concepto.atributos['Descripcion'])
             c.drawString(315, altura, concepto.atributos['ObjetoImp'])
-            c.drawString(348, altura, concepto.atributos['Cantidad'])
+            c.drawCentredString(352, altura, concepto.atributos['Cantidad'])
             c.drawString(385, altura, concepto.atributos['ClaveUnidad'])
-            c.drawString(418, altura, 'KGS')
-            c.drawString(452, altura, concepto.atributos['ValorUnitario'])
-            c.drawString(542, altura, concepto.atributos['Importe'])
-            altura-=9
+            for art in self.txt_detalle_data:
+                if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
+                    c.drawCentredString(426, altura, str(art['Kgs']))
+                    break
+            c.drawString(459, altura, concepto.atributos['ValorUnitario'])
+            #Descuento
+            c.drawString(459, altura, concepto.atributos['ValorUnitario'])
+            c.drawRightString(580, altura, concepto.atributos['Importe'])
+            altura -= 9
 
+        # Finalizar última página
+        c.setFont('Times-New', 6)
         altura -= 15
-        #Cuadro gris
         c.setFillColor(lightgrey)
-        c.rect(20,altura,560,20,fill=True,stroke=0)
-
+        c.rect(20, altura, 560, 20, fill=True, stroke=0)
         c.setFillColor(black)
         c.drawString(25, altura+15, self.txt_datosfa_data['ResumenTax'])
         c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
         c.drawString(25, altura+2, self.txt_empresa_data['obs02'])
 
+        # Añadir número de página
+        c.setFont('Times-New', 5.5)
+        c.drawRightString(474, 830, f"Pag {self.pagina_actual}/{self.total_paginas}")
+
+        c.setFont('Times-New', 6)
         self.Footer(c, altura)
 
     #Se fija la altura
-    ##TODO Los kilos de los conceptos
     @abstractmethod
     def PrintConceptos(self, c):
         altura = 553
         c.setFillColor(black)
 
-        #calcula si cabe en una página
-        #altura debe ser menor a 346, ancho se maneja para saltar línea en caso de que sea requerido por el largo del texto
-        num_conceptos =  len([idx for idx, concepto in enumerate(self.xml_data.conceptos)])
-        need = num_conceptos*9
-        
-        for idx, concepto in enumerate(self.xml_data.conceptos):
-            if 90+c.stringWidth(concepto.atributos['Descripcion']) >= 300:
-                pass
-            else:
-                pass
+        # Calcular el número total de páginas
+        num_conceptos = len(self.xml_data.conceptos)
+        conceptos_por_pagina = (altura - 346) // 9  # Conceptos que caben en una página
 
-        if altura-need <= 346:
-            self.MasPags(c)
+        self.total_paginas = (num_conceptos // conceptos_por_pagina) + (1 if num_conceptos % conceptos_por_pagina > 0 else 0)
+        self.pagina_actual = 1
 
+        if self.total_paginas == 1:
+            self.UnaPagina(c)  # Solo necesita una página
         else:
-            self.UnaPagina(c)
+            self.MasPags(c)  # Necesita más de una página
