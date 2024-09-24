@@ -8,17 +8,16 @@ TODO
 
 class XmlPdf:
     
-    def __init__(self, xml_obj):
-        self.body = Body(xml_obj)
+    def __init__(self, xml_obj, filenametxt):
+        self.body = Body(xml_obj, filenametxt)
         
     def main(self, filenamexml, filenametxt):
-        c = canvas.Canvas("test_FP204233.pdf")
+        c = canvas.Canvas("test_FP212034.pdf")
         self.body.GetLayout(filenamexml, c, filenametxt)
         c.save()
 
-#xml_obj = 'archivos_de_prueba/FP204233-copia.xml'
-xml_obj = 'archivos_de_prueba/FP204233.xml'
-in_txt = 'archivos_de_prueba/FP204233.txt'
+xml_obj = 'C:/Users/Usuario1/Desktop/Requerimentos/JPrieto/xml_to_pdf_dcruz/pruebas/IVA/16/XAXX/FP212034.xml'
+in_txt = 'C:/Users/Usuario1/Desktop/Requerimentos/JPrieto/xml_to_pdf_dcruz/pruebas/IVA/16/XAXX/FP212034.txt'
 
-pdf = XmlPdf(xml_obj)
+pdf = XmlPdf(xml_obj, in_txt)
 pdf.main(xml_obj, in_txt)

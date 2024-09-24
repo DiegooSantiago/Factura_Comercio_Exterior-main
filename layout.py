@@ -12,9 +12,8 @@ import locale
 
 
 class Strings(XMLData):
-    def __init__(self, xml_obj):
+    def __init__(self, xml_obj, txt_file):
         super().__init__()
-        txt_file = 'archivos_de_prueba/FP204233.txt'
         self.xml_data = self.GetData(xml_obj)
         self.txt = TxtData()
         self.txt_emisor_data = self.txt.GetEmisorData(txt_file)
@@ -34,8 +33,8 @@ class Strings(XMLData):
         pdfmetrics.registerFont(TTFont(self.fuente_nombre, fuente_path))
 
 class Layout(Strings):
-    def __init__(self, xml_obj):
-        super().__init__(xml_obj)
+    def __init__(self, xml_obj, txt_file):
+        super().__init__(xml_obj, txt_file)
 
     @classmethod
     def SetStaticLabels(cls, c):
@@ -67,12 +66,17 @@ class Layout(Strings):
         c.drawString(12, 741, f"{self.txt_receptor_data['calle']} {self.txt_receptor_data['noExterior']}")
         if self.txt_receptor_data['codigoPostal'] == 'NA':
             c.drawString(12, 730, f"{self.txt_receptor_data['codigoPostal']}")
+        elif self.txt_receptor_data['codigoPostal'] == '':
+            aux_y = 12
         else:
             c.drawString(12, 730, f"{self.txt_receptor_data['colonia']} C.P.{self.txt_receptor_data['codigoPostal']}")
-        c.drawString(12, 718, f"{self.txt_receptor_data['localidad']}")
-        c.drawString(12, 707, f"{self.txt_receptor_data['municipio']} {self.txt_receptor_data['estado']}, {self.txt_receptor_data['pais']}")
-        c.drawString(12, 696, f"{self.txt_receptor_data['idFiscal']}")
-        c.drawString(12, 685, f"{self.txt_receptor_data['telefono']}")
+        c.drawString(12, 718+aux_y, f"{self.txt_receptor_data['localidad']}")
+        if self.txt_receptor_data['municipio'] == '':
+            c.drawString(12, 707+aux_y, f"{self.txt_receptor_data['estado']}, {self.txt_receptor_data['pais']}")
+        else:
+            c.drawString(12, 707+aux_y, f"{self.txt_receptor_data['municipio']} {self.txt_receptor_data['estado']}, {self.txt_receptor_data['pais']}")
+        c.drawString(12, 696+aux_y, f"{self.txt_receptor_data['idFiscal']}")
+        c.drawString(12, 685+aux_y, f"{self.txt_receptor_data['telefono']}")
 
 
         #Labels No estáticos del segundo cuadro DATOS EMPRESA
@@ -92,7 +96,7 @@ class Layout(Strings):
         #DATOS BANCOS DEL VIENEN DEL TXT
         #Revisar cómo se comporta esa parte
         altura_bancos = 647
-        c.drawString(15, altura_bancos, f"{self.txt_empresa_data['extra03Banco']}")
+        _ = self.FitText(c,15,altura_bancos,self.txt_empresa_data['extra03Banco'],14)
         c.drawString(70, altura_bancos, self.txt_empresa_data['extra03Clabe'])
         c.drawString(160, altura_bancos, self.txt_empresa_data['extra03Cuenta'])
         c.drawString(235, altura_bancos, self.txt_empresa_data['extra03Ref'])
@@ -439,18 +443,22 @@ class Layout(Strings):
         altura = 553
         c.setFont('Times-New-Bold', 6)
         for idx, concepto in enumerate(self.xml_data.conceptos):
-            c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
+            if concepto.atributos['ClaveProdServ'] != '01010101':
+                c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
+                for art in self.txt_detalle_data:
+                    if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
+                        c.drawCentredString(426, altura, str(art['Kgs']))
+                        if str(art['Descto']) != '0.00':
+                            c.drawRightString(525, altura, str(art['Descto']))
+                        break
+            else:
+                c.drawCentredString(426, altura, '0')
             c.drawString(53, altura, concepto.atributos['ClaveProdServ'])
             c.drawString(90, altura, concepto.atributos['Descripcion'])
             c.drawString(315, altura, concepto.atributos['ObjetoImp'])
             c.drawCentredString(352, altura, concepto.atributos['Cantidad'])
             c.drawString(385, altura, concepto.atributos['ClaveUnidad'])
-            for art in self.txt_detalle_data:
-                if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
-                    c.drawCentredString(426, altura, str(art['Kgs']))
-                    break
-            c.drawString(459, altura, concepto.atributos['ValorUnitario'])
-            #Descuento
+            c.drawRightString(479, altura, concepto.atributos['ValorUnitario'])
             c.drawRightString(580, altura, concepto.atributos['Importe'])
             altura -= 9
 
@@ -462,11 +470,25 @@ class Layout(Strings):
         altura -= 15
         # Cuadro gris
         c.setFillColor(lightgrey)
-        c.rect(20, altura, 560, 20, fill=True, stroke=0)
+        if self.txt_empresa_data['obs01'] == '':
+            aux_h = 13.5
+            aux_y = 6.5
+        else:
+            aux_h = 20
+            aux_y = 0
+        if self.txt_empresa_data['obs02'] == '':
+            aux_h -= 6.5
+            aux_y += 6.5
+        c.rect(20, altura+aux_y, 560, aux_h, fill=True, stroke=0)
         c.setFillColor(black)
         c.drawString(25, altura+15, self.txt_datosfa_data['ResumenTax'])
-        c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
-        c.drawString(25, altura+2, self.txt_empresa_data['obs02'])
+        if self.txt_empresa_data['obs01'] == '':
+            aux_alt = 6.5
+        else:
+            aux_alt = 0
+            c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
+        if self.txt_empresa_data['obs02'] != '':
+            c.drawString(25, altura+2+aux_alt, self.txt_empresa_data['obs02'])
 
         self.Footer(c, altura)
 
@@ -479,11 +501,25 @@ class Layout(Strings):
                 # Página completa, pasa a la siguiente página
                 altura -= 15
                 c.setFillColor(lightgrey)
-                c.rect(20, altura, 560, 20, fill=True, stroke=0)
+                if self.txt_empresa_data['obs01'] == '':
+                    aux_h = 13.5
+                    aux_y = 6.5
+                else:
+                    aux_h = 20
+                    aux_y = 0
+                if self.txt_empresa_data['obs02'] == '':
+                    aux_h -= 6.5
+                    aux_y += 6.5
+                c.rect(20, altura+aux_y, 560, aux_h, fill=True, stroke=0)
                 c.setFillColor(black)
                 c.drawString(25, altura+15, self.txt_datosfa_data['ResumenTax'])
-                c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
-                c.drawString(25, altura+2, self.txt_empresa_data['obs02'])
+                if self.txt_empresa_data['obs01'] == '':
+                    aux_alt = 6.5
+                else:
+                    aux_alt = 0
+                    c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
+                if self.txt_empresa_data['obs02'] != '':
+                    c.drawString(25, altura+2+aux_alt, self.txt_empresa_data['obs02'])
 
                 # Añadir número de página
                 c.setFont('Times-New', 5.5)
@@ -500,19 +536,22 @@ class Layout(Strings):
 
             # Imprimir el concepto actual
             c.setFont('Times-New-Bold', 6)
-            c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
+            if concepto.atributos['ClaveProdServ'] != '01010101':
+                c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
+                for art in self.txt_detalle_data:
+                    if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
+                        c.drawCentredString(426, altura, str(art['Kgs']))
+                        if str(art['Descto']) != '0.00':
+                            c.drawRightString(525, altura, str(art['Descto']))
+                        break
+            else:
+                c.drawCentredString(426, altura, '0')
             c.drawString(53, altura, concepto.atributos['ClaveProdServ'])
             c.drawString(90, altura, concepto.atributos['Descripcion'])
             c.drawString(315, altura, concepto.atributos['ObjetoImp'])
             c.drawCentredString(352, altura, concepto.atributos['Cantidad'])
             c.drawString(385, altura, concepto.atributos['ClaveUnidad'])
-            for art in self.txt_detalle_data:
-                if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
-                    c.drawCentredString(426, altura, str(art['Kgs']))
-                    break
-            c.drawString(459, altura, concepto.atributos['ValorUnitario'])
-            #Descuento
-            c.drawString(459, altura, concepto.atributos['ValorUnitario'])
+            c.drawRightString(479, altura, concepto.atributos['ValorUnitario'])
             c.drawRightString(580, altura, concepto.atributos['Importe'])
             altura -= 9
 
@@ -520,11 +559,25 @@ class Layout(Strings):
         c.setFont('Times-New', 6)
         altura -= 15
         c.setFillColor(lightgrey)
-        c.rect(20, altura, 560, 20, fill=True, stroke=0)
+        if self.txt_empresa_data['obs01'] == '':
+            aux_h = 13.5
+            aux_y = 6.5
+        else:
+            aux_h = 20
+            aux_y = 0
+        if self.txt_empresa_data['obs02'] == '':
+            aux_h -= 6.5
+            aux_y += 6.5
+        c.rect(20, altura+aux_y, 560, aux_h, fill=True, stroke=0)
         c.setFillColor(black)
         c.drawString(25, altura+15, self.txt_datosfa_data['ResumenTax'])
-        c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
-        c.drawString(25, altura+2, self.txt_empresa_data['obs02'])
+        if self.txt_empresa_data['obs01'] == '':
+            aux_alt = 6.5
+        else:
+            aux_alt = 0
+            c.drawString(25, altura+8.5, self.txt_empresa_data['obs01'])
+        if self.txt_empresa_data['obs02'] != '':
+            c.drawString(25, altura+2+aux_alt, self.txt_empresa_data['obs02'])
 
         # Añadir número de página
         c.setFont('Times-New', 5.5)

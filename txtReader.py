@@ -91,7 +91,7 @@ class TxtData:
             columnas = lineas[0].strip().split('|')
             for linea in lineas[1:]:
                 valores = linea.split('|')
-                if len(valores)-2 == len(columnas)-1:
+                if (len(valores)-1 == len(columnas)) or (len(valores) == len(columnas)):
                     diccionario_det = {}
                     for i in range(len(columnas)):
                         if columnas[i] != '':

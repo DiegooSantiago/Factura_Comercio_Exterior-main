@@ -3,8 +3,8 @@ from abc import abstractmethod
 
 class Body(Layout):
 
-	def __init__(self, xml_obj):
-		super().__init__(xml_obj)
+	def __init__(self, xml_obj, filenametxt):
+		super().__init__(xml_obj, filenametxt)
 
 	@abstractmethod
 	def GetLayout(self, file_object, c, filenametxt):
