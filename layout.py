@@ -60,16 +60,42 @@ class Layout(Strings):
 
     def SetStaticLabels_(self, c):
 
-        #Receptor, primer cuadro etiquetas no estáticas
+        #Cuadro a lado info bancos
         c.setFont('Times-New', 7.5)
+        aux_y = 657
+        c.drawString(293, aux_y, self.txt_empresa_data['ship01'])
+        aux_y -= 10
+        if self.txt_empresa_data['ship02'] != '':
+            c.drawString(293, aux_y, self.txt_empresa_data['ship02'])
+            aux_y -= 10
+        c.drawString(293, aux_y, self.txt_empresa_data['ship03'])
+        aux_y -= 10
+        if self.txt_empresa_data['ship04'] != '':
+            c.drawString(293, aux_y, self.txt_empresa_data['ship04'])
+            aux_y -= 10
+        c.drawString(293, aux_y, self.txt_empresa_data['ship05'])
+        aux_y -= 10
+        if self.txt_empresa_data['ship06'] != '':
+            c.drawString(293, aux_y, self.txt_empresa_data['ship06'])
+            aux_y -= 10
+        if self.txt_empresa_data['ship07'] != '':
+            c.drawString(293, aux_y, self.txt_empresa_data['ship07'])
+            aux_y -= 10
+
+
+        #Receptor, primer cuadro etiquetas no estáticas
         c.drawString(12, 752, f"{self.xml_data.receptor['Nombre']}, Domicilio Fiscal: {self.xml_data.receptor['DomicilioFiscalReceptor']}, Regimen Fiscal: {self.xml_data.receptor['RegimenFiscalReceptor']}")
-        c.drawString(12, 741, f"{self.txt_receptor_data['calle']} {self.txt_receptor_data['noExterior']}")
+        c.drawString(12, 741, f"{self.txt_receptor_data['calle']} {self.txt_receptor_data['noExterior']} {self.txt_receptor_data['noInterior']}")
+        aux_y = 0
         if self.txt_receptor_data['codigoPostal'] == 'NA':
             c.drawString(12, 730, f"{self.txt_receptor_data['codigoPostal']}")
         elif self.txt_receptor_data['codigoPostal'] == '':
             aux_y = 12
         else:
-            c.drawString(12, 730, f"{self.txt_receptor_data['colonia']} C.P.{self.txt_receptor_data['codigoPostal']}")
+            if self.txt_receptor_data['colonia'] == '':
+                c.drawString(12, 730, f"{self.txt_receptor_data['CPPDF']}")
+            else:
+                c.drawString(12, 730, f"{self.txt_receptor_data['colonia']} {self.txt_receptor_data['CPPDF']}")
         c.drawString(12, 718+aux_y, f"{self.txt_receptor_data['localidad']}")
         if self.txt_receptor_data['municipio'] == '':
             c.drawString(12, 707+aux_y, f"{self.txt_receptor_data['estado']}, {self.txt_receptor_data['pais']}")
@@ -94,7 +120,6 @@ class Layout(Strings):
 
 
         #DATOS BANCOS DEL VIENEN DEL TXT
-        #Revisar cómo se comporta esa parte
         altura_bancos = 647
         _ = self.FitText(c,15,altura_bancos,self.txt_empresa_data['extra03Banco'],14)
         c.drawString(70, altura_bancos, self.txt_empresa_data['extra03Clabe'])
@@ -277,7 +302,7 @@ class Layout(Strings):
         c.drawString(22, altura+2, 'CANTIDAD CON LETRA')
         c.setFont('Times-New-Bold', 7)
         c.drawString(110, altura+2, f"{self.txt_datostot_data['cantidadConLetra']}")
-        c.drawString(215, altura-7, 'IMPORTANTE', charSpace=2)
+        c.drawString(215, altura-7, f"{self.txt_datosfa_data['InfoTit']}")
         c.setFont('Times-New-Bold', 9)
         if self.txt_datosfa_data['InfoCta'][0:2] == 'La':
             _ = self.FitText(c, 22, altura-18,self.txt_datosfa_data['InfoCta'][0:97], 97,9)
@@ -286,6 +311,10 @@ class Layout(Strings):
             _ = self.FitText(c, 22, altura-38,self.txt_datosfa_data['InfoCta'][169:], 110,9)
         elif self.txt_datosfa_data['InfoCta'][0:2] == 'PA':
             _ = self.FitText(c, 22, altura-18,self.txt_datosfa_data['InfoCta'][0:], 70,9)
+        elif self.txt_datosfa_data['InfoCta'][0:2] == 'Th':
+            _ = self.FitText(c, 22, altura-18,self.txt_datosfa_data['InfoCta'][0:90], 90,9)
+            _ = self.FitText(c, 22, altura-28,self.txt_datosfa_data['InfoCta'][90:165], 75,9)
+            _ = self.FitText(c, 22, altura-38,self.txt_datosfa_data['InfoCta'][166:], 100,9)
         c.setFillColor(self.purple)
         c.roundRect(20,altura,410,10,1)
         
@@ -316,7 +345,7 @@ class Layout(Strings):
         inicio += 31
         c.setFillColor(black)
         c.drawString(473, altura-10, f"{cadena[inicio:fin].strip()}%")
-        c.drawRightString(577, altura-10, f"{self.txt_datostot_data['IVA']}")
+        c.drawRightString(577, altura-10, f"{locale.currency(float(self.txt_datostot_data['IVA']), symbol=False, grouping=True)}")
         c.drawRightString(577, altura-25, f"{locale.currency(float(self.txt_datostot_data['total']), grouping=True)}")
         if self.txt_datostot_data['IEPS'] != '0.00':
             altura +=10
@@ -444,7 +473,7 @@ class Layout(Strings):
         c.setFont('Times-New-Bold', 6)
         for idx, concepto in enumerate(self.xml_data.conceptos):
             if concepto.atributos['ClaveProdServ'] != '01010101':
-                c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
+                c.drawCentredString(28, altura, concepto.atributos['NoIdentificacion'])
                 for art in self.txt_detalle_data:
                     if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
                         c.drawCentredString(426, altura, str(art['Kgs']))
@@ -454,13 +483,12 @@ class Layout(Strings):
             else:
                 c.drawCentredString(426, altura, '0')
             c.drawString(53, altura, concepto.atributos['ClaveProdServ'])
-            c.drawString(90, altura, concepto.atributos['Descripcion'])
             c.drawString(315, altura, concepto.atributos['ObjetoImp'])
             c.drawCentredString(352, altura, concepto.atributos['Cantidad'])
             c.drawString(385, altura, concepto.atributos['ClaveUnidad'])
             c.drawRightString(479, altura, concepto.atributos['ValorUnitario'])
             c.drawRightString(580, altura, concepto.atributos['Importe'])
-            altura -= 9
+            altura = self.FitText(c, 90, altura, concepto.atributos['Descripcion'], 55, 9)
 
         # Añadir el número de página
         c.setFont('Times-New', 5.5)
@@ -537,7 +565,7 @@ class Layout(Strings):
             # Imprimir el concepto actual
             c.setFont('Times-New-Bold', 6)
             if concepto.atributos['ClaveProdServ'] != '01010101':
-                c.drawString(15, altura, concepto.atributos['NoIdentificacion'])
+                c.drawCentredString(28, altura, concepto.atributos['NoIdentificacion'])
                 for art in self.txt_detalle_data:
                     if ((art['Articulo'] == concepto.atributos['NoIdentificacion']) and (art['Bultos'] == concepto.atributos['Cantidad'])):
                         c.drawCentredString(426, altura, str(art['Kgs']))
@@ -547,13 +575,12 @@ class Layout(Strings):
             else:
                 c.drawCentredString(426, altura, '0')
             c.drawString(53, altura, concepto.atributos['ClaveProdServ'])
-            c.drawString(90, altura, concepto.atributos['Descripcion'])
             c.drawString(315, altura, concepto.atributos['ObjetoImp'])
             c.drawCentredString(352, altura, concepto.atributos['Cantidad'])
             c.drawString(385, altura, concepto.atributos['ClaveUnidad'])
             c.drawRightString(479, altura, concepto.atributos['ValorUnitario'])
             c.drawRightString(580, altura, concepto.atributos['Importe'])
-            altura -= 9
+            altura = self.FitText(c, 90, altura, concepto.atributos['Descripcion'], 55, 9)
 
         # Finalizar última página
         c.setFont('Times-New', 6)
