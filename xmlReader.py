@@ -11,6 +11,8 @@ class Comprobante:
         self.conceptos = [Concepto(concepto, ns) for concepto in root.findall(".//cfdi:Concepto", namespaces=ns)]
         self.impuestos = Impuestos(root.find(".//cfdi:Impuestos", namespaces=ns), ns)
         self.tfd = TimbreFiscalDigital(root.find(".//tfd:TimbreFiscalDigital", namespaces=ns))
+        self.CfdiRelacionados = root.find(".//cfdi:CfdiRelacionados", namespaces=ns).attrib
+        self.CfdiRelacionado = root.find(".//cfdi:CfdiRelacionados/cfdi:CfdiRelacionado", namespaces=ns).attrib
 
 class Concepto:
     def __init__(self, element, ns):

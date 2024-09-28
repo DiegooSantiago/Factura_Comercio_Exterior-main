@@ -23,6 +23,7 @@ class Strings(XMLData):
         self.txt_datostot_data = self.txt.GetTotalesData(txt_file)
         self.txt_datoscom_data = self.txt.GetComprobanteData(txt_file)
         self.txt_detalle_data =  self.txt.GetDetalleData(txt_file)
+        self.txt_datosinfog_data = self.txt.GetInfoGData(txt_file)
 
         fuente_path = "fonts/Courier.ttf"
         self.fuente_nombre = "Times-New"
@@ -37,7 +38,7 @@ class Layout(Strings):
         super().__init__(xml_obj, txt_file)
 
     @classmethod
-    def SetStaticLabels(cls, c):
+    def SetStaticLabels(cls, c, aux_y):
 
         #Labels Segundo cuadro
         c.setFont('Times-New-Bold', 7)
@@ -53,12 +54,12 @@ class Layout(Strings):
         c.drawString(361, 673, 'cfdis Relacionados')
 
         #Labels Header Bancos
-        c.drawString(15, 657, 'BANCO')
-        c.drawString(70, 657, 'CUENTA CLABE')
-        c.drawString(160, 657, 'CUENTA')
-        c.drawString(235, 657, 'REFERENCIA')
+        c.drawString(15, 657-aux_y, 'BANCO')
+        c.drawString(70, 657-aux_y, 'CUENTA CLABE')
+        c.drawString(160, 657-aux_y, 'CUENTA')
+        c.drawString(235, 657-aux_y, 'REFERENCIA')
 
-    def SetStaticLabels_(self, c):
+    def SetStaticLabels_(self, c, aux_y):
 
         #Cuadro a lado info bancos
         c.setFont('Times-New', 7.5)
@@ -120,7 +121,7 @@ class Layout(Strings):
 
 
         #DATOS BANCOS DEL VIENEN DEL TXT
-        altura_bancos = 647
+        altura_bancos = 647-aux_y
         _ = self.FitText(c,15,altura_bancos,self.txt_empresa_data['extra03Banco'],14)
         c.drawString(70, altura_bancos, self.txt_empresa_data['extra03Clabe'])
         c.drawString(160, altura_bancos, self.txt_empresa_data['extra03Cuenta'])
@@ -133,14 +134,6 @@ class Layout(Strings):
         c.drawString(70, altura_bancos-14, self.txt_empresa_data['extra05Clabe'])
         c.drawString(160, altura_bancos-14, self.txt_empresa_data['extra05Cuenta'])
         c.drawString(235, altura_bancos-14, self.txt_empresa_data['extra05Ref'])
-        c.drawString(15, altura_bancos-21, f"{self.txt_empresa_data['extra06Banco']}")
-        c.drawString(70, altura_bancos-21, self.txt_empresa_data['extra06Clabe'])
-        c.drawString(160, altura_bancos-21, self.txt_empresa_data['extra06Cuenta'])
-        c.drawString(235, altura_bancos-21, self.txt_empresa_data['extra06Ref'])
-        c.drawString(15, altura_bancos-28, f"{self.txt_empresa_data['extra07Banco']}")
-        c.drawString(70, altura_bancos-28, self.txt_empresa_data['extra07Clabe'])
-        c.drawString(160, altura_bancos-28, self.txt_empresa_data['extra07Cuenta'])
-        c.drawString(235, altura_bancos-28, self.txt_empresa_data['extra07Ref'])
 
         #Bancos etiquetas no estáticas
         c.drawString(30, 610, f"FORMA DE PAGO: {self.xml_data.atributos['FormaPago']}")
@@ -169,15 +162,20 @@ class Layout(Strings):
         c.drawString(220, 815, f"METODO PAGO: {self.xml_data.atributos['MetodoPago']}, {self.txt_datosfa_data['FormaPagoPDF']} USO CFDI: {self.xml_data.receptor['UsoCFDI']}: {self.txt_datosfa_data['UsoCfdi']}")
         c.setFont('Times-New-Bold', 6)
         c.drawString(200, 809, f"REGIMEN FISCAL: {self.xml_data.emisor['RegimenFiscal']}. {self.txt_emisor_data['regimenFiscalPDF']}.")
+        aux_y = 809
+        if self.txt_datosinfog_data['Periodicidad'] != '':
+            aux_y -= 10
+            c.drawString(240, aux_y, f"INFORMACIÓN GLOBAL Periodicidad: {self.txt_datosinfog_data['Periodicidad']}, Meses:{self.txt_datosinfog_data['Meses']}, Año:{self.txt_datosinfog_data['Anio']}")
+        aux_y -= 14
         c.setFont('Times-New-Bold', 7)
-        c.drawString(270, 795, f"TIPO DE COMPROBANTE: {self.xml_data.atributos['TipoDeComprobante']} {self.txt_datosfa_data['TipoComprobante']}")
-        c.drawString(220, 785, 'FECHA DE EMISION:')
+        c.drawString(270, aux_y, f"TIPO DE COMPROBANTE: {self.xml_data.atributos['TipoDeComprobante']} {self.txt_datosfa_data['TipoComprobante']}")
+        c.drawString(220, aux_y-10, 'FECHA DE EMISION:')
         c.setFont('Times-New', 6.5)
-        c.drawString(223, 775, f"{self.xml_data.atributos['Fecha'].replace('T', ' ')}")
+        c.drawString(223, aux_y-20, f"{self.xml_data.atributos['Fecha'].replace('T', ' ')}")
         c.setFont('Times-New-Bold', 7)
-        c.drawString(330, 785, 'LUGAR DE EXPEDICION:')
+        c.drawString(330, aux_y-10, 'LUGAR DE EXPEDICION:')
         c.setFont('Times-New', 7)
-        c.drawString(360, 775, f"{self.xml_data.atributos['LugarExpedicion']}")
+        c.drawString(360, aux_y-20, f"{self.xml_data.atributos['LugarExpedicion']}")
     
     @abstractmethod
     def GetFolios(self, c):
@@ -208,7 +206,13 @@ class Layout(Strings):
     def GetRectangles(self, c):
         #1st Rect
         c.rect(10, 680, 350, 80)
-        c.rect(360, 665, 220, 95)
+        aux_y = 0
+        if self.xml_data.CfdiRelacionados['TipoRelacion'] != '':
+            aux_y = 15
+            c.setFont('Times-New-Bold', 7)
+            c.drawString(363, 664, self.xml_data.CfdiRelacionados['TipoRelacion'])
+            c.drawString(363, 655, self.xml_data.CfdiRelacionado['UUID'])
+        c.rect(360, 665-aux_y, 220, 95+aux_y)
 
         #Corresponding lines
         c.line(360, 682, 580, 682)
@@ -220,12 +224,12 @@ class Layout(Strings):
         c.line(465, 748, 465, 722)
         c.line(515, 722, 515, 709)
         
-        self.SetStaticLabels(c)
-        self.SetStaticLabels_(c)
+        self.SetStaticLabels(c, aux_y)
+        self.SetStaticLabels_(c, aux_y)
         
         #Second Rect
-        c.rect(10, 585, 280, 80)
-        c.rect(290,585,290,80)
+        c.rect(10, 585-aux_y, 280, 80)
+        c.rect(290,585-aux_y,290,80)
 
     @abstractmethod
     def GetDetalleHeader(self, c):

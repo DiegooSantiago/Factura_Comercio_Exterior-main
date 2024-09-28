@@ -8,6 +8,7 @@ class TxtData:
         self.datostot_data : dict = {}
         self.datoscom_data : dict = {}
         self.detalle_data : list = []
+        self.datosinfog_data : dict = {}
 
     def GetEmisorData(self, filename) -> dict:
         with open(filename, 'r', encoding='latin-1') as file:
@@ -98,3 +99,14 @@ class TxtData:
                             diccionario_det[columnas[i]] = valores[i]
                     self.detalle_data.append(diccionario_det)
         return self.detalle_data
+
+    def GetInfoGData(self, filename) -> dict:
+        with open(filename, 'r', encoding='latin-1') as file:
+            for line in file:
+                if line.startswith('infoG:'):
+                    parts = line.strip().split('=')
+                    if len(parts) == 2:
+                        variable_name = parts[0][6:]
+                        variable_infog_value = parts[1]
+                        self.datosinfog_data[variable_name] = variable_infog_value
+        return self.datosinfog_data
