@@ -61,6 +61,7 @@ class Layout(Strings):
 
     def SetStaticLabels_(self, c, aux_y):
 
+        aux_y_bancos = aux_y
         #Cuadro a lado info bancos
         c.setFont('Times-New', 7.5)
         aux_y = 657
@@ -132,7 +133,7 @@ class Layout(Strings):
 
 
         #DATOS BANCOS DEL VIENEN DEL TXT
-        altura_bancos = 647-aux_y
+        altura_bancos = 647-aux_y_bancos
         _ = self.FitText(c,15,altura_bancos,self.txt_empresa_data['extra03Banco'],14)
         c.drawString(70, altura_bancos, self.txt_empresa_data['extra03Clabe'])
         c.drawString(160, altura_bancos, self.txt_empresa_data['extra03Cuenta'])
@@ -446,8 +447,7 @@ class Layout(Strings):
         c.setFont('Times-New-Bold', 7)
         c.drawString(20, altura, f"{self.xml_data.receptor['Nombre']}")
         altura -= 8
-        c.drawString(20, altura, f"{self.txt_receptor_data['calle']} , {self.txt_receptor_data['colonia']} {self.txt_receptor_data['CPLabel']}")
-        altura -= 8
+        altura = self.FitText(c, 20, altura, f"{self.txt_receptor_data['calle']} , {self.txt_receptor_data['colonia']} {self.txt_receptor_data['CPLabel']}", 70)
         c.drawString(20, altura, f"{self.txt_receptor_data['localidad']}")
         altura -= 8
         c.drawString(20, altura, f"{self.txt_receptor_data['estado']}, {self.txt_receptor_data['pais']}")
@@ -487,7 +487,7 @@ class Layout(Strings):
     def UnaPagina(self, c):
         altura = 553
         c.setFont('Times-New-Bold', 6.5)
-        for idx, concepto in enumerate(self.xml_data.conceptos):
+        for _, concepto in enumerate(self.xml_data.conceptos):
             if concepto.atributos['ClaveProdServ'] != '01010101':
                 c.drawCentredString(28, altura, concepto.atributos['NoIdentificacion'])
                 for art in self.txt_detalle_data:
