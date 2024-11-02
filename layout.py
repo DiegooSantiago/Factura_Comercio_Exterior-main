@@ -64,7 +64,7 @@ class Layout(Strings):
         aux_y_bancos = aux_y
         #Cuadro a lado info bancos
         c.setFont('Times-New', 7.5)
-        aux_y = 657
+        aux_y = 657 - aux_y_bancos
         c.drawString(293, aux_y, self.txt_empresa_data['ship01'])
         aux_y -= 10
         if self.txt_empresa_data['ship02'] != '':
@@ -148,13 +148,13 @@ class Layout(Strings):
         c.drawString(235, altura_bancos-14, self.txt_empresa_data['extra05Ref'])
 
         #Bancos etiquetas no estáticas
-        c.drawString(30, 610, f"FORMA DE PAGO: {self.xml_data.atributos['FormaPago']}")
-        c.drawString(15, 600, f"MONEDA: {self.xml_data.atributos['Moneda']}")
-        c.drawString(90, 600, f"TIPO CAMBIO: {self.xml_data.atributos['TipoCambio']}" )
-        c.drawString(166,600, f"Exportación: {self.xml_data.atributos['Exportacion']}")
-        c.drawString(140, 590, f"FECHA DE VENCIMIENTO: ")
+        c.drawString(30, altura_bancos-21, f"FORMA DE PAGO: {self.xml_data.atributos['FormaPago']}")
+        c.drawString(15, altura_bancos-31, f"MONEDA: {self.xml_data.atributos['Moneda']}")
+        c.drawString(90, altura_bancos-31, f"TIPO CAMBIO: {self.xml_data.atributos['TipoCambio']}" )
+        c.drawString(166, altura_bancos-31, f"Exportación: {self.xml_data.atributos['Exportacion']}")
+        c.drawString(140, altura_bancos-41, f"FECHA DE VENCIMIENTO: ")
         c.setFont('Times-New-Bold', 7)
-        c.drawString(229, 590, f"{self.txt_empresa_data['yearPag']}-{self.txt_empresa_data['mesPag']}-{self.txt_empresa_data['diaPag']}")
+        c.drawString(229, altura_bancos-41, f"{self.txt_empresa_data['yearPag']}-{self.txt_empresa_data['mesPag']}-{self.txt_empresa_data['diaPag']}")
 
     @abstractmethod
     def GetStaticHeaderText(self, c):
@@ -221,10 +221,11 @@ class Layout(Strings):
         aux_y = 0
         if self.xml_data.CfdiRelacionados is not None:
             if self.xml_data.CfdiRelacionados['TipoRelacion'] != '':
-                aux_y = 15
                 c.setFont('Times-New-Bold', 7)
                 c.drawString(363, 664, self.xml_data.CfdiRelacionados['TipoRelacion'])
-                c.drawString(363, 655, self.xml_data.CfdiRelacionado['UUID'])
+                for relacionado in self.xml_data.cfdi_relacionados_list:
+                    c.drawString(363, 655 - aux_y, relacionado.attrib.get("UUID", "No especificado"))
+                    aux_y += 15
         c.rect(360, 665-aux_y, 220, 95+aux_y)
 
         #Corresponding lines

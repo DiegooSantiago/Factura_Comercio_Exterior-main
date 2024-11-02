@@ -1,8 +1,8 @@
 from reportlab.pdfgen import canvas
 from body import Body
 
-folio = 'FP201203'
-carpeta = '46'
+folio = 'FP201706'
+carpeta = '55'
 
 class XmlPdf:
     

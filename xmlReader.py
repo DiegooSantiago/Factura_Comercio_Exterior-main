@@ -18,7 +18,7 @@ class Comprobante:
             self.CfdiRelacionados = None
         cfdi_relacionado = root.find(".//cfdi:CfdiRelacionados/cfdi:CfdiRelacionado", namespaces=ns)
         if cfdi_relacionado is not None:
-            self.CfdiRelacionado = cfdi_relacionado.attrib
+            self.cfdi_relacionados_list = root.findall(".//cfdi:CfdiRelacionados/cfdi:CfdiRelacionado", namespaces=ns)
         else:
             self.CfdiRelacionado = None
 
