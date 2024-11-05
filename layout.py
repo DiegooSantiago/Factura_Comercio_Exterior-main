@@ -61,10 +61,10 @@ class Layout(Strings):
 
     def SetStaticLabels_(self, c, aux_y):
 
-        aux_y_bancos = aux_y
+        self.aux_y_bancos = aux_y
         #Cuadro a lado info bancos
         c.setFont('Times-New', 7.5)
-        aux_y = 657 - aux_y_bancos
+        aux_y = 657 - self.aux_y_bancos
         c.drawString(293, aux_y, self.txt_empresa_data['ship01'])
         aux_y -= 10
         if self.txt_empresa_data['ship02'] != '':
@@ -133,7 +133,7 @@ class Layout(Strings):
 
 
         #DATOS BANCOS DEL VIENEN DEL TXT
-        altura_bancos = 647-aux_y_bancos
+        altura_bancos = 647-self.aux_y_bancos
         _ = self.FitText(c,15,altura_bancos,self.txt_empresa_data['extra03Banco'],14)
         c.drawString(70, altura_bancos, self.txt_empresa_data['extra03Clabe'])
         c.drawString(160, altura_bancos, self.txt_empresa_data['extra03Cuenta'])
@@ -148,13 +148,13 @@ class Layout(Strings):
         c.drawString(235, altura_bancos-14, self.txt_empresa_data['extra05Ref'])
 
         #Bancos etiquetas no estáticas
-        c.drawString(30, altura_bancos-21, f"FORMA DE PAGO: {self.xml_data.atributos['FormaPago']}")
-        c.drawString(15, altura_bancos-31, f"MONEDA: {self.xml_data.atributos['Moneda']}")
-        c.drawString(90, altura_bancos-31, f"TIPO CAMBIO: {self.xml_data.atributos['TipoCambio']}" )
-        c.drawString(166, altura_bancos-31, f"Exportación: {self.xml_data.atributos['Exportacion']}")
-        c.drawString(140, altura_bancos-41, f"FECHA DE VENCIMIENTO: ")
+        c.drawString(30, altura_bancos-36, f"FORMA DE PAGO: {self.xml_data.atributos['FormaPago']}")
+        c.drawString(15, altura_bancos-46, f"MONEDA: {self.xml_data.atributos['Moneda']}")
+        c.drawString(90, altura_bancos-46, f"TIPO CAMBIO: {self.xml_data.atributos['TipoCambio']}" )
+        c.drawString(166, altura_bancos-46, f"Exportación: {self.xml_data.atributos['Exportacion']}")
+        c.drawString(140, altura_bancos-56, f"FECHA DE VENCIMIENTO: ")
         c.setFont('Times-New-Bold', 7)
-        c.drawString(229, altura_bancos-41, f"{self.txt_empresa_data['yearPag']}-{self.txt_empresa_data['mesPag']}-{self.txt_empresa_data['diaPag']}")
+        c.drawString(229, altura_bancos-56, f"{self.txt_empresa_data['yearPag']}-{self.txt_empresa_data['mesPag']}-{self.txt_empresa_data['diaPag']}")
 
     @abstractmethod
     def GetStaticHeaderText(self, c):
@@ -248,31 +248,31 @@ class Layout(Strings):
     @abstractmethod
     def GetDetalleHeader(self, c):
         c.setFillColor(self.purple)
-        c.roundRect(10, 560, 570, 25, 4, fill=True)
+        c.roundRect(10, 560-self.aux_y_bancos, 570, 25, 4, fill=True)
         c.setFillColor(white)
         c.setFont('Times-New', 6)
-        c.drawString(20, 575, 'CVE')
-        c.drawString(18, 565, 'ARTIC')
-        c.line(45, 585, 45, 560)
-        c.drawString(53, 575, 'COD SAT')
-        c.line(90, 585, 90, 560)
-        c.drawString(175, 575, 'DESCRIPCION')
-        c.line(305, 585, 305, 560)
-        c.drawString(313, 575, 'OBJ.')
-        c.drawString(310, 565, 'IMPTO')
-        c.line(335, 585, 335, 560)
-        c.drawString(340, 575, 'BULTOS')
-        c.line(370, 585, 370, 560)
-        c.drawString(378, 575, 'U.M. SAT')
-        c.line(410, 585, 410, 560)
-        c.drawString(420, 575, 'KGS')
-        c.line(440, 585, 440, 560)
-        c.drawString(453, 575, 'VALOR')
-        c.drawString(448, 565, 'UNITARIO')
-        c.line(485, 585, 485, 560)
-        c.drawString(490, 575, 'DESCUENTO')
-        c.line(530, 585, 530, 560)
-        c.drawString(542, 575, 'IMPORTE')
+        c.drawString(20, 575-self.aux_y_bancos, 'CVE')
+        c.drawString(18, 565-self.aux_y_bancos, 'ARTIC')
+        c.line(45, 585-self.aux_y_bancos, 45, 560-self.aux_y_bancos)
+        c.drawString(53, 575-self.aux_y_bancos, 'COD SAT')
+        c.line(90, 585-self.aux_y_bancos, 90, 560-self.aux_y_bancos)
+        c.drawString(175, 575-self.aux_y_bancos, 'DESCRIPCION')
+        c.line(305, 585-self.aux_y_bancos, 305, 560-self.aux_y_bancos)
+        c.drawString(313, 575-self.aux_y_bancos, 'OBJ.')
+        c.drawString(310, 565-self.aux_y_bancos, 'IMPTO')
+        c.line(335, 585-self.aux_y_bancos, 335, 560-self.aux_y_bancos)
+        c.drawString(340, 575-self.aux_y_bancos, 'BULTOS')
+        c.line(370, 585-self.aux_y_bancos, 370, 560-self.aux_y_bancos)
+        c.drawString(378, 575-self.aux_y_bancos, 'U.M. SAT')
+        c.line(410, 585-self.aux_y_bancos, 410, 560-self.aux_y_bancos)
+        c.drawString(420, 575-self.aux_y_bancos, 'KGS')
+        c.line(440, 585-self.aux_y_bancos, 440, 560-self.aux_y_bancos)
+        c.drawString(453, 575-self.aux_y_bancos, 'VALOR')
+        c.drawString(448, 565-self.aux_y_bancos, 'UNITARIO')
+        c.line(485, 585-self.aux_y_bancos, 485, 560-self.aux_y_bancos)
+        c.drawString(490, 575-self.aux_y_bancos, 'DESCUENTO')
+        c.line(530, 585-self.aux_y_bancos, 530, 560-self.aux_y_bancos)
+        c.drawString(542, 575-self.aux_y_bancos, 'IMPORTE')
 
     def FitText(self, c, x, y, texto, max_chars, factor=None) -> int:
         lines = [texto[i:i + max_chars] for i in range(0, len(texto), max_chars)]
@@ -486,7 +486,7 @@ class Layout(Strings):
         c.drawString(332, altura-20, 'INCONFORMARSE POR ESCRITO DE LO CONTRARIO SE ACEPTA A SU ENTERA SATISFACCIÓN')
 
     def UnaPagina(self, c):
-        altura = 553
+        altura = 553-self.aux_y_bancos
         c.setFont('Times-New-Bold', 6.5)
         for _, concepto in enumerate(self.xml_data.conceptos):
             if concepto.atributos['ClaveProdServ'] != '01010101':
@@ -544,7 +544,7 @@ class Layout(Strings):
         self.Footer(c, altura)
 
     def MasPags(self, c):
-        altura = 553
+        altura = 553-self.aux_y_bancos
         conceptos_por_pagina = (altura - 346) // 9
         
         for idx, concepto in enumerate(self.xml_data.conceptos):
